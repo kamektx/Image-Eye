@@ -1,0 +1,613 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IEYEICO                 ICON                    "ieye.ico"
+FOLDEROPENICO           ICON                    "folder_open.ico"
+FOLDERCLOSEDICO         ICON                    "folder_closed.ico"
+CLRICO                  ICON                    "clr.ico"
+HELPICO                 ICON                    "help.ico"
+OPENICO                 ICON                    "open.ico"
+EXITICO                 ICON                    "exit.ico"
+NEXTICO                 ICON                    "next.ico"
+PREVICO                 ICON                    "prev.ico"
+NEWICO                  ICON                    "new.ico"
+CLOSEALLICO             ICON                    "closeall.ico"
+ZOOMINICO               ICON                    "zoomin.ico"
+ZOOMOUTICO              ICON                    "zoomout.ico"
+ROTLEFTICO              ICON                    "rotleft.ico"
+ROTRIGHTICO             ICON                    "rotright.ico"
+SAVEICO                 ICON                    "save.ico"
+OPTIONSICO              ICON                    "options.ico"
+PRINTICO                ICON                    "print.ico"
+DELETEICO               ICON                    "delete.ico"
+SLIDEICO                ICON                    "slide.ico"
+SIZE2WINICO             ICON                    "size2win.ico"
+SIZE2IMGICO             ICON                    "size2img.ico"
+FULLSCREENICO           ICON                    "fullscreen.ico"
+RELOADICO               ICON                    "reload.ico"
+WINDOWEDICO             ICON                    "windowed.ico"
+CHECKMARKICO            ICON                    "checkmark.ico"
+RESTOREICO              ICON                    "restore.ico"
+INDEXICO                ICON                    "index.ico"
+IINDEXICO               ICON                    "iindex.ico"
+CONTRASTMINICO          ICON                    "contrastmin.ico"
+CONTRASTMAXICO          ICON                    "contrastmax.ico"
+BRIGHTNESSMINICO        ICON                    "brightnessmin.ico"
+BRIGHTNESSMAXICO        ICON                    "brightnessmax.ico"
+SHARPNESSMINICO         ICON                    "sharpnessmin.ico"
+SHARPNESSMAXICO         ICON                    "sharpnessmax.ico"
+HUEMINICO               ICON                    "huemin.ico"
+HUEMAXICO               ICON                    "huemax.ico"
+SATURATIONMINICO        ICON                    "saturationmin.ico"
+SATURATIONMAXICO        ICON                    "saturationmax.ico"
+GAMMAMINICO             ICON                    "gammamin.ico"
+GAMMAMAXICO             ICON                    "gammamax.ico"
+LUMINANCEMINICO         ICON                    "luminancemin.ico"
+LUMINANCEMAXICO         ICON                    "luminancemax.ico"
+REDMINICO               ICON                    "redmin.ico"
+REDMAXICO               ICON                    "redmax.ico"
+GREENMINICO             ICON                    "greenmin.ico"
+GREENMAXICO             ICON                    "greenmax.ico"
+BLUEMINICO              ICON                    "bluemin.ico"
+BLUEMAXICO              ICON                    "bluemax.ico"
+FILEINFOICO             ICON                    "optionsi.ico"
+LOGOICO                 ICON                    "logo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION 9,1,0,0
+ PRODUCTVERSION 9,1,0,0
+ FILEFLAGSMASK 0x0L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "http://www.fmjsoft.com/"
+            VALUE "CompanyName", "FMJ-Software"
+            VALUE "FileDescription", "Image Eye"
+            VALUE "FileVersion", "9.1.0.0"
+            VALUE "LegalCopyright", "Copyright 2015, FMJ-Software"
+            VALUE "OriginalFilename", "Image Eye.Exe"
+            VALUE "ProductName", "Image Eye"
+            VALUE "ProductVersion", "9.1.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+FILEOPENDLG DIALOGEX 0, 0, 281, 225
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "- - -",OF_INFO,90,169,130,55
+    PUSHBUTTON      "Index",OF_INDEX,222,181,50,14
+    RTEXT           "Recent:",IDC_STATIC,0,5,33,8
+    COMBOBOX        OF_RECENT,36,2,243,160,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",OF_PREVIEW,"Button",BS_OWNERDRAW,4,163,80,61
+    LTEXT           "",1119,0,16,280,147
+    PUSHBUTTON      "Help",OF_HELP,222,163,50,14
+END
+
+PVPDLG DIALOGEX 16, 16, 248, 148
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Viewer"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Viewer behavior",IDC_STATIC,6,1,236,81,WS_GROUP
+    CONTROL         "Show title bar only when mouse hovers over image",PVP_HIDECAPTION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,12,224,10
+    CONTROL         "Open in full screen mode",PVP_RUNMAXIMIZED,"Button",BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,13,26,110,10
+    CONTROL         "Auto-size image to window",PVP_AUTOSIZEIMAGE,"Button",BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,13,40,110,10
+    CONTROL         "Only shrink",PVP_ONLYAUTOSHRINK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,54,110,10
+    CONTROL         "Auto-shrink when too large in full screen mode",PVP_AUTOSHRINKLARGE,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,13,68,224,10
+    GROUPBOX        "Title bar text",IDC_STATIC,6,83,236,24
+    CONTROL         "Image resolution",PVP_TITLERES,"Button",BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,13,93,107,10
+    CONTROL         "Full file path",PVP_FULLPATH,"Button",BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,126,93,100,10
+    PUSHBUTTON      "Window background color",PVP_BGCOLOR,125,52,110,14
+    GROUPBOX        "Image overlay text",IDC_STATIC,5,108,236,38
+    COMBOBOX        PVP_OVERLAY1POS,13,130,72,111,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        PVP_OVERLAY1TYPE,13,117,72,111,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        PVP_OVERLAY2POS,90,130,72,111,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        PVP_OVERLAY2TYPE,90,117,72,111,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        PVP_OVERLAY3POS,162,130,72,111,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        PVP_OVERLAY3TYPE,162,117,72,111,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Translucent background",PVP_GLASSEFFECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,26,115,10
+    CONTROL         "Auto-background color",PVP_AUTOBGCOLOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,40,115,10
+END
+
+PGPDLG DIALOGEX 16, 16, 248, 148
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Copyright 1993, 2015 - FMJ-Software - All rights reserved",IDC_STATIC,6,22,236,8
+    PUSHBUTTON      "Visit our WWW site for updates and more great apps!",PAP_WWW,5,122,237,19,BS_CENTER | NOT WS_TABSTOP
+    LTEXT           "Image Eye",PAP_IEYE,6,9,236,8
+    LTEXT           "",PAP_IDEBUG,6,35,236,8
+    ICON            IEYEICO,IDC_STATIC,74,47,20,20,SS_REALSIZEIMAGE,WS_EX_TRANSPARENT
+    ICON            LOGOICO,IDC_STATIC,113,55,20,20,SS_REALSIZEIMAGE,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Please make a donation if you enjoy using this program!",PAP_DONATE,5,96,237,19,BS_CENTER | NOT WS_TABSTOP
+END
+
+POPDLG DIALOGEX 16, 16, 248, 148
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Misc"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Interface language:",IDC_STATIC,6,11,95,8
+    COMBOBOX        POP_LANGUAGE,101,9,135,182,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Recent directories and last file memory",IDC_STATIC,6,56,236,34
+    CONTROL         "Clear on program exit",POP_CLEARRECENTONEXIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,70,150,10
+    PUSHBUTTON      "Clear now",POP_CLEARRECENTNOW,164,68,72,14
+    PUSHBUTTON      "Edit associations...",POP_EDITFILETYPES,101,30,99,14
+    LTEXT           "File type associations:",IDC_STATIC,6,32,95,8
+END
+
+PIPDLG DIALOGEX 16, 16, 248, 148
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Index"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Maximum icon size:",IDC_STATIC,13,13,80,8,NOT WS_GROUP
+    EDITTEXT        PIP_ICONX,96,13,22,12,ES_CENTER | ES_NUMBER
+    LTEXT           "x",IDC_STATIC,122,13,8,8,NOT WS_GROUP
+    EDITTEXT        PIP_ICONY,130,12,22,12,ES_CENTER | ES_NUMBER
+    LTEXT           "Icon spacing:",IDC_STATIC,13,27,80,8,NOT WS_GROUP
+    EDITTEXT        PIP_ICONSPACING,96,26,22,12,ES_CENTER | ES_NUMBER
+    CONTROL         "Compress cache files",PIP_COMPRESSCACHE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,41,110,10
+    GROUPBOX        "Thumbnail icons",IDC_STATIC,6,1,236,85,WS_GROUP
+    CONTROL         "Automatically create cache",PIP_AUTOCREATECACHE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,41,114,10
+    CONTROL         "Show full directory path",PIP_FULLPATH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,122,113,10
+    CONTROL         "Show number of images",PIP_NUMFILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,122,107,10
+    PUSHBUTTON      "Window background color",PIP_BGCOLOR,130,93,105,14
+    GROUPBOX        "Title bar text",IDC_STATIC,6,111,236,27
+    CONTROL         "Close index window when opening an image",PIP_CLOSEONOPEN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,69,225,10
+    CONTROL         "Icon size stored in cache overrides selected icon size",PIP_CACHEDSIZEOVERRIDES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,55,225,10
+    CONTROL         "Translucent background",PIP_GLASSEFFECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,95,104,10
+END
+
+CLRDLG DIALOGEX 0, 0, 253, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | DS_CENTERMOUSE | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_CLIENTEDGE
+CAPTION "Image adjustment"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,42,254,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,85,255,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,140,255,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,172,254,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,60,0,1,142
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,228,0,1,142
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,132,141,1,33
+    LTEXT           "Contrast:",IDC_STATIC,6,5,54,8
+    CONTROL         "Slider1",CLR_CONTRAST,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,76,4,138,12
+    ICON            CONTRASTMAXICO,IDC_STATIC,214,4,20,20,SS_REALSIZEIMAGE
+    CTEXT           "0",CLR_CONTRAST_VAL,233,5,17,8
+    LTEXT           "Brightness:",IDC_STATIC,6,17,54,8
+    ICON            BRIGHTNESSMINICO,IDC_STATIC,65,16,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Slider1",CLR_BRIGHTNESS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,76,16,138,12
+    ICON            BRIGHTNESSMAXICO,IDC_STATIC,214,16,20,20,SS_REALSIZEIMAGE
+    CTEXT           "0",CLR_BRIGHTNESS_VAL,233,17,17,8
+    LTEXT           "Sharpness:",65534,6,29,54,8
+    ICON            SHARPNESSMINICO,IDC_STATIC,65,28,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Slider1",CLR_SHARPNESS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,76,28,138,12
+    ICON            SHARPNESSMAXICO,IDC_STATIC,214,28,20,20,SS_REALSIZEIMAGE
+    CTEXT           "0",CLR_SHARPNESS_VAL,233,29,17,8
+    LTEXT           "Hue:",IDC_STATIC,6,48,54,8
+    ICON            HUEMINICO,IDC_STATIC,65,47,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Slider1",CLR_HUE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,76,46,138,12
+    ICON            HUEMAXICO,IDC_STATIC,214,47,20,20,SS_REALSIZEIMAGE
+    CTEXT           "0",CLR_HUE_VAL,233,48,17,8
+    LTEXT           "Saturation:",IDC_STATIC,6,60,54,8
+    ICON            SATURATIONMINICO,IDC_STATIC,65,59,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Slider1",CLR_SAT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,76,58,138,12
+    ICON            SATURATIONMAXICO,IDC_STATIC,214,59,20,20,SS_REALSIZEIMAGE
+    CTEXT           "0",CLR_SAT_VAL,233,60,17,8
+    LTEXT           "Gamma:",IDC_STATIC,6,72,54,8
+    ICON            GAMMAMINICO,IDC_STATIC,65,71,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Slider1",CLR_GAMMA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,76,70,138,12
+    ICON            GAMMAMAXICO,IDC_STATIC,214,71,20,20,SS_REALSIZEIMAGE
+    CTEXT           "0",CLR_GAMMA_VAL,233,72,17,8
+    LTEXT           "Luminance:",IDC_STATIC,6,91,54,8
+    ICON            LUMINANCEMINICO,IDC_STATIC,65,90,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Slider1",CLR_LUM,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,76,89,138,12
+    ICON            LUMINANCEMAXICO,IDC_STATIC,214,90,20,20,SS_REALSIZEIMAGE
+    CTEXT           "0",CLR_LUM_VAL,233,91,17,8
+    LTEXT           "Red-bias:",IDC_STATIC,6,103,54,8
+    ICON            REDMINICO,IDC_STATIC,65,102,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Slider1",CLR_R,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,76,101,138,12
+    ICON            REDMAXICO,IDC_STATIC,214,102,20,20,SS_REALSIZEIMAGE
+    CTEXT           "0",CLR_R_VAL,233,103,17,8
+    LTEXT           "Green-bias:",IDC_STATIC,6,115,54,8
+    ICON            GREENMINICO,IDC_STATIC,65,114,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Slider1",CLR_G,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,76,113,138,12
+    ICON            GREENMAXICO,IDC_STATIC,214,114,20,20,SS_REALSIZEIMAGE
+    CTEXT           "0",CLR_G_VAL,233,115,17,8
+    LTEXT           "Blue-bias:",IDC_STATIC,6,127,54,8
+    ICON            BLUEMINICO,IDC_STATIC,65,126,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Slider1",CLR_B,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,76,125,138,12
+    ICON            BLUEMAXICO,IDC_STATIC,214,126,20,20,SS_REALSIZEIMAGE
+    CTEXT           "0",CLR_B_VAL,233,127,17,8
+    LTEXT           "Rotate image:",IDC_STATIC,6,146,54,8
+    COMBOBOX        CLR_ROTATE,60,145,38,95,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Invert colors",CLR_INV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,158,118,10
+    CONTROL         "Mirror image vertically",CLR_MIRRORV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,141,146,112,10
+    CONTROL         "Mirror image horizontally",CLR_MIRRORH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,141,158,112,10
+    PUSHBUTTON      "Reset",CLR_RESET,7,180,56,15
+    PUSHBUTTON      "Save",CLR_SAVE,68,180,56,15
+    PUSHBUTTON      "Cancel",IDCANCEL,129,180,56,15
+    PUSHBUTTON      "OK",IDOK,190,180,56,15
+    ICON            CONTRASTMINICO,IDC_STATIC,65,4,20,20,SS_REALSIZEIMAGE
+END
+
+PAPDLG DIALOGEX 16, 16, 249, 148
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TRANSPARENT
+CAPTION "Image"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LISTBOX         PAP_INFO,6,13,237,129,NOT LBS_NOTIFY | LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    GROUPBOX        "Image file information",IDC_STATIC,6,1,237,141
+END
+
+CSSDLG DIALOGEX 0, 0, 229, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Create slideshow script"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Create!",IDOK,14,148,60,14
+    PUSHBUTTON      "Cancel",IDCANCEL,160,148,60,14
+    LTEXT           "File name:",IDC_STATIC,7,8,50,8
+    EDITTEXT        CSS_FILENAME,58,7,162,13,ES_AUTOHSCROLL
+    CONTROL         "No delay between images",CSS_NODELAY,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,13,34,201,10
+    CONTROL         "Wait for keypress or mouseclick",CSS_KEYPRESS,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,13,47,195,10
+    CONTROL         "Delay",CSS_DELAY,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,13,60,38,10
+    EDITTEXT        CSS_DELAYTIME,58,59,23,13,ES_AUTOHSCROLL
+    LTEXT           "seconds between images",IDC_STATIC,88,61,131,8
+    CONTROL         "Write full file paths",CSS_FULLPATHS,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,25,97,188,10
+    CONTROL         "Loop slideshow continuously",CSS_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,109,188,10
+    CONTROL         "Edit in Notepad before executing",CSS_NOTEPAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,121,188,10
+    GROUPBOX        "Image progression",IDC_STATIC,7,23,213,56
+    CONTROL         "Delete script file when finished",CSS_SELFDELETE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,133,188,10
+    CTEXT           "Note:   You can at any time press 'pause' to pause the slide show, or 'escape' to quit it.",IDC_STATIC,14,168,206,22
+    ICON            IEYEICO,IDC_STATIC,107,146,20,20
+    LTEXT           "<---",IDC_STATIC,86,151,14,8
+    LTEXT           "--->",IDC_STATIC,136,151,14,8
+    CONTROL         "Sort files alphabetically",CSS_SORTFILES,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,17,85,188,10
+END
+
+FILERENAMEDLG DIALOGEX 0, 0, 240, 92
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Rename image file"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Rename!",IDOK,45,71,56,14
+    PUSHBUTTON      "Cancel",IDCANCEL,137,71,56,14
+    LTEXT           "Old name:",IDC_STATIC,7,7,226,8
+    EDITTEXT        FRN_SRC,13,18,220,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "New name:",IDC_STATIC,7,39,226,8
+    EDITTEXT        FRN_DST,13,50,220,13,ES_AUTOHSCROLL
+END
+
+SETUPDLG DIALOGEX 0, 0, 212, 83
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | DS_CENTERMOUSE | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Info"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Continue >",IDOK,74,62,62,14
+    COMBOBOX        SUO_DL_LANGUAGES,86,7,120,180,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Lng",SUO_T_LANGUAGES,7,9,76,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,27,205,1
+    CONTROL         "Ass",SUO_C_ASSOCIATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,35,198,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,54,205,1
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+VIEWER_MENU ACCELERATORS
+BEGIN
+    "A",            CMD_ADJUSTIMAGE,        VIRTKEY, NOINVERT
+    "B",            CMD_SENDTOBACK,         VIRTKEY, NOINVERT
+    "C",            CMD_CLIPBCOPY,          VIRTKEY, CONTROL, NOINVERT
+    "C",            CMD_COPY,               VIRTKEY, ALT, NOINVERT
+    "D",            CMD_DELETE,             VIRTKEY, ALT, NOINVERT
+    "E",            CMD_ERASE,              VIRTKEY, ALT, NOINVERT
+    "F",            CMD_FILEINFO,           VIRTKEY, NOINVERT
+    "F",            CMD_FREEZE,             VIRTKEY, CONTROL, NOINVERT
+    "I",            CMD_INDEX,              VIRTKEY, NOINVERT
+    "M",            CMD_MOVE,               VIRTKEY, ALT, NOINVERT
+    "O",            CMD_LOADNEW,            VIRTKEY, NOINVERT
+    "R",            CMD_SIZERESTORE,        VIRTKEY, NOINVERT
+    "R",            CMD_RENAME,             VIRTKEY, ALT, NOINVERT
+    "S",            CMD_SLIDEAUTO,          VIRTKEY, NOINVERT
+    "T",            CMD_TRIM2WINDOW,        VIRTKEY, NOINVERT
+    "U",            CMD_TOPMOSTTOGGLE,      VIRTKEY, NOINVERT
+    "V",            CMD_CLIPBPASTE,         VIRTKEY, CONTROL, NOINVERT
+    "W",            CMD_SIZE2IMAGE,         VIRTKEY, ALT, NOINVERT
+    "W",            CMD_SIZE2WINDOW,        VIRTKEY, NOINVERT
+    "N",            CMD_SPAWNNEW,           VIRTKEY, NOINVERT
+    "X",            CMD_KILLEMALL,          VIRTKEY, CONTROL, ALT, NOINVERT
+    "X",            CMD_DELETE_SHOWNEXT,    VIRTKEY, CONTROL, NOINVERT
+    "X",            CMD_ERASE_SHOWNEXT,     VIRTKEY, SHIFT, NOINVERT
+    "X",            CMD_EXIT,               VIRTKEY, ALT, NOINVERT
+    189,            CMD_ZOOM25,             ASCII,  NOINVERT
+    167,            CMD_ZOOM50,             ASCII,  NOINVERT
+    "1",            CMD_ZOOM100,            VIRTKEY, NOINVERT
+    "2",            CMD_ZOOM200,            VIRTKEY, NOINVERT
+    "3",            CMD_ZOOM300,            VIRTKEY, NOINVERT
+    "4",            CMD_ZOOM400,            VIRTKEY, NOINVERT
+    VK_ADD,         CMD_ZOOM_IN,            VIRTKEY, NOINVERT
+    VK_BACK,        CMD_PREVIMAGE,          VIRTKEY, NOINVERT
+    VK_BACK,        CMD_SPAWNPREVIMAGE,     VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        CMD_ZOOM_OUT,           VIRTKEY, NOINVERT
+    VK_DOWN,        CMD_MIRROR_VERT,        VIRTKEY, CONTROL, NOINVERT
+    VK_END,         CMD_LASTIMAGE,          VIRTKEY, NOINVERT
+    VK_ESCAPE,      CMD_EXIT,               VIRTKEY, NOINVERT
+    VK_HOME,        CMD_FIRSTIMAGE,         VIRTKEY, NOINVERT
+    VK_INSERT,      CMD_CLIPBCOPY,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      CMD_CLIPBPASTE,         VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        CMD_MIRROR_HORIZ,       VIRTKEY, CONTROL, NOINVERT
+    VK_LEFT,        CMD_ROTATE_90,          VIRTKEY, NOINVERT
+    VK_NEXT,        CMD_NEXTIMAGE,          VIRTKEY, NOINVERT
+    VK_NEXT,        CMD_SPAWNNEXTIMAGE,     VIRTKEY, CONTROL, NOINVERT
+    VK_PRIOR,       CMD_PREVIMAGE,          VIRTKEY, NOINVERT
+    VK_PRIOR,       CMD_SPAWNPREVIMAGE,     VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      CMD_FULLSCREENTOGGLE,   VIRTKEY, ALT, NOINVERT
+    VK_RETURN,      CMD_PROPERTIES,         VIRTKEY, CONTROL, NOINVERT
+    VK_RIGHT,       CMD_ROTATE_270,         VIRTKEY, NOINVERT
+    VK_RIGHT,       CMD_MIRROR_HORIZ,       VIRTKEY, CONTROL, NOINVERT
+    VK_SCROLL,      CMD_FREEZE,             VIRTKEY, NOINVERT
+    VK_SPACE,       CMD_NEXTIMAGE,          VIRTKEY, NOINVERT
+    VK_SPACE,       CMD_SPAWNNEXTIMAGE,     VIRTKEY, CONTROL, NOINVERT
+    VK_SUBTRACT,    CMD_ZOOM_OUT,           VIRTKEY, NOINVERT
+    VK_TAB,         CMD_NEXTWINDOW,         VIRTKEY, NOINVERT
+    VK_TAB,         CMD_PREVWINDOW,         VIRTKEY, SHIFT, NOINVERT
+    VK_UP,          CMD_ZOOM_IN,            VIRTKEY, NOINVERT
+    VK_UP,          CMD_MIRROR_VERT,        VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          CMD_HELP,               VIRTKEY, NOINVERT
+    VK_F2,          CMD_RENAME,             VIRTKEY, NOINVERT
+    VK_F3,          CMD_LOADNEW,            VIRTKEY, NOINVERT
+    VK_F4,          CMD_SPAWNNEW,           VIRTKEY, NOINVERT
+    VK_F5,          CMD_RELOAD,             VIRTKEY, NOINVERT
+    VK_F6,          CMD_PROPERTIES,         VIRTKEY, NOINVERT
+    VK_F7,          CMD_ADJUSTIMAGE,        VIRTKEY, NOINVERT
+    VK_F8,          CMD_SIZE2WINDOW,        VIRTKEY, NOINVERT
+    VK_F9,          CMD_SIZE2IMAGE,         VIRTKEY, NOINVERT
+    VK_F10,         CMD_SIZERESTORE,        VIRTKEY, NOINVERT
+    VK_F11,         CMD_FULLSCREENTOGGLE,   VIRTKEY, NOINVERT
+    VK_F12,         CMD_CLRPICK,            VIRTKEY, NOINVERT
+END
+
+INDEX_MENU ACCELERATORS
+BEGIN
+    "C",            CMD_SAVECACHE,          VIRTKEY, NOINVERT
+    "F",            CMD_FREEZE,             VIRTKEY, CONTROL, NOINVERT
+    "N",            CMD_SPAWNNEW,           VIRTKEY, NOINVERT
+    "S",            CMD_SLIDEAUTO,          VIRTKEY, NOINVERT
+    "X",            CMD_REMOVECACHE,        VIRTKEY, NOINVERT
+    "X",            CMD_EXIT,               VIRTKEY, ALT, NOINVERT
+    "X",            CMD_KILLEMALL,          VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_ESCAPE,      CMD_EXIT,               VIRTKEY, NOINVERT
+    VK_RETURN,      CMD_FULLSCREENTOGGLE,   VIRTKEY, ALT, NOINVERT
+    VK_TAB,         CMD_NEXTWINDOW,         VIRTKEY, NOINVERT
+    VK_TAB,         CMD_PREVWINDOW,         VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          CMD_HELP,               VIRTKEY, NOINVERT
+    VK_F5,          CMD_MANUALRECREATE,     VIRTKEY, NOINVERT
+    VK_F6,          CMD_PROPERTIES,         VIRTKEY, NOINVERT
+    VK_F4,          CMD_SPAWNNEW,           VIRTKEY, NOINVERT
+    VK_F11,         CMD_FULLSCREENTOGGLE,   VIRTKEY, NOINVERT
+END
+
+FROZEN_MENU ACCELERATORS
+BEGIN
+    "F",            CMD_FREEZE,             VIRTKEY, CONTROL, NOINVERT
+    "N",            CMD_SPAWNNEW,           VIRTKEY, NOINVERT
+    "O",            CMD_LOADNEW,            VIRTKEY, NOINVERT
+    "X",            CMD_EXIT,               VIRTKEY, ALT, NOINVERT
+    VK_DOWN,        CMD_ZOOM_OUT,           VIRTKEY, NOINVERT
+    VK_END,         CMD_LASTIMAGE,          VIRTKEY, NOINVERT
+    VK_HOME,        CMD_FIRSTIMAGE,         VIRTKEY, NOINVERT
+    VK_NEXT,        CMD_NEXTIMAGE,          VIRTKEY, NOINVERT
+    VK_PRIOR,       CMD_PREVIMAGE,          VIRTKEY, NOINVERT
+    VK_SCROLL,      CMD_FREEZE,             VIRTKEY, NOINVERT
+    VK_UP,          CMD_ZOOM_IN,            VIRTKEY, NOINVERT
+    VK_F3,          CMD_LOADNEW,            VIRTKEY, NOINVERT
+    VK_F4,          CMD_SPAWNNEW,           VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XYSCROLLCUR             CURSOR                  "xyscroll.cur"
+XSCROLLCUR              CURSOR                  "xscrollc.cur"
+YSCROLLCUR              CURSOR                  "yscrollc.cur"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+CHECKBTNBMP             BITMAP                  "checkbtn.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    PVPDLG, DIALOG
+    BEGIN
+    END
+
+    PGPDLG, DIALOG
+    BEGIN
+    END
+
+    CLRDLG, DIALOG
+    BEGIN
+    END
+
+    PAPDLG, DIALOG
+    BEGIN
+    END
+
+    CSSDLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 228
+        BOTTOMMARGIN, 178
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+PVPDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+PGPDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+CSSDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+CLRDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish (Sweden) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+LANGUAGE LANG_SWEDISH, SUBLANG_SWEDISH
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Swedish (Sweden) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

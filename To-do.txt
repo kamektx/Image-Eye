@@ -1,0 +1,22 @@
+
+IDEAS FOR FUTURE VERSIONS:
+
+Interface:
+- Touch Input support (gestures for next/prev, zoom, rotate, close, open index?)
+- More modern look for the tabbed Options dialog.
+- Configurable key and mouse button commands.
+- Editing support for image meta data.
+- "Open with" command list (to open in e.g. external editors).
+- Option for a "flow arrangement" of index icons instead of the current "grid arrangement" (in order to fit as much as possible into the available space).
+- Support for creating image adjustments "presets" that can be easily recalled, either through a single key-stroke, or in a preset list in the image adjustments dialog.
+- Optional image slide-in/out morph when switching images.
+- Show (optional) floating toolbar when hoovering over, or pressing on image (touch-sized icons for prev/next/load/index/options/close).
+
+Performance:
+- AVX2/AVX support (is this actually slower with current CPU's?).
+- Smoother drawing and updating of image windows by using Direct2D.
+- Support for GPU computing (pixel shaders?) for even faster resampling.
+
+File formats:
+- Support WebP: https://developers.google.com/speed/webp/
+- Support EXT: http://www.openexr.com/

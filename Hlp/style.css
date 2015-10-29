@@ -1,0 +1,64 @@
+BODY { 
+	font-family: Arial, sans-serif; 
+	font-size: 10pt;
+	color: #010000;
+	background-color: #FFFFFF;
+}
+
+H1 {
+	font-size: 14pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+H2 {
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: normal;
+}
+
+H3 {
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+A {
+	font-style: italic;
+	color: #2060A0;
+}
+
+A:link {
+	text-decoration: underline; 
+}
+
+A:visited {
+	text-decoration: none;
+} 
+
+TD {
+	font-family: Arial, sans-serif; 
+	font-size: 10pt;
+}
+
+EM {
+	font-style: normal;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #000040;
+}
+
+IMG {
+	border-style: none;
+}
+
+CODE {
+	font-family: Arial, sans-serif; 
+	color: #606000;
+}
+
+
+KBD {
+	font-family: Arial, sans-serif; 
+	color: #808080;
+}
+

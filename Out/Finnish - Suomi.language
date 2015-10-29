@@ -1,0 +1,272 @@
+///////////////////////////////////////////////////////////////////////////
+// Finnish translation of Image Eye - by Pekka Makkonen, pekkis@ioni.org //
+///////////////////////////////////////////////////////////////////////////
+
+
+//
+// Viewer context menu
+//
+
+File|Tiedosto
+View|Näytä
+Slideshow|Kuvaesitys
+Index|Pikkukuvat
+Options|Asetukset
+Restore window|Tallenna ikkuna
+Close|Sulje
+Help|Ohje
+
+// View->
+Fullscreen mode|Vaihda ikkuna - kokoruutu
+Topmost window|Pidä päällimmäisenä
+Freeze window|Lukitse ikkuna
+Size window to image|Säädä ikkuna kuvan kokoon
+Size image to window|Säädä kuva ikkunan kokoon
+Trim image to window|Rajaa kuva ikkunan mukaan
+Restore original size|Palauta alkuperäinen koko
+Adjust image...|Värinsäädöt...
+Rotate image -90°|Käännä kuvaa -90°
+Rotate image +90°|Käännä kuvaa +90°
+Rotate image 180°|Käännä kuvaa 180°
+Mirror image vertically|Peilikuva vaaka-akselin kautta
+Mirror image horizontally|Peilikuva pystyakselin kautta
+Zoom in|Suurenna
+Zoom out|Pienennä
+Zoom to factor|Suurennus
+Zoom to 10% size|10%
+Zoom to 25% size|25%
+Zoom to 50% size|50%
+Zoom to 75% size|75%
+Zoom to 100% size|100%
+Zoom to 150% size|150%
+Zoom to 200% size|200%
+Zoom to 300% size|300%
+Zoom to 400% size|400%
+Use as desktop wallpaper|Työpöydän taustakuvaksi
+Send window to back|Sijoita ikkuna taaimmaiseksi
+
+// File->
+Load new...|Avaa uusi kuva...
+Next image file|Seuraava kuva
+Previous image file|Edellinen kuva
+First image file in directory|Ensimmäinen kuva hakemistossa
+Last image file in directory|Viimeinen kuva hakemistossa
+Close all image windows|Sulje kaikki kuvaikkunat
+Spawn new...|Uusi kuvaikkuna...
+Spawn next image|Seuraava kuva uuteen ikkunaan
+Spawn previous image|Edellinen kuva uuteen ikkunaan
+Image file information...|Kuvan tiedot...
+Save as...|Tallenna...
+Reload from file|Päivitä kuva
+Copy file...|Kopioi...
+Move file...|Siirrä...
+Rename file...|Nimeä uudelleen...
+Delete file...|Poista kuva...
+Erase file...|Poista kuva lopullisesti
+Delete this & show next...|Poista kuva ja näytä seuraava...
+Erase this & show next...|Poista kuva lopullisesti ja näytä seuraava...
+Copy to clipboard|Kopioi leikepöydälle
+Paste from clipboard|Sijoita leikepöydältä
+Capture a screen shot|Kaappaa näyttökuva
+Capture a window shot|Kaappaa ohjelmaikkuna
+
+// Slideshow->
+Create slideshow script|Luo kuvaesitys...
+Run in fullscreen mode|Näytä kokoruututilassa
+
+//
+// Index context menu (only the items not also on the viewer context menu)
+//
+
+View image|Näytä kuva
+View index|Näytä pikkukuvat
+View slideshow|Näytä kuvaesitys
+Edit slideshow|Muokkaa kuvaesitystä
+Open|Avaa
+Recurse sub-directories|Näytä myös alihakemistot
+Sort icons|Lajittele pikkukuvat
+Icon cache|Välimuisti
+
+// File->
+Save index as bitmap...|Tallenna pikkukuvat bitmap kuvana...
+
+// View->
+Directories|Hakemistot
+Non-image files|Ei-kuvatiedostot
+Names (1 line)|Nimet rivi 1
+Names (2 lines)|Nimet rivi 2
+Names (3 lines)|Nimet rivi 3
+Names (4 lines)|Nimet rivi 4
+Resolutions|Kuvakoot
+File extensions|Tiedostopäätteet
+File dates|Päivämäärät
+File sizes|Tiedostokoot
+
+// Sort->
+By name|Nimen mukaan
+By full path|Hakemiston ja nimen mukaan
+By image size|Kuvakoon mukaan
+By file size|Tiedostokoon mukaan
+By file date|Päivämäärän mukaan
+
+// Cache->
+Recreate|Päivitä
+Save cache|Tallenna välimuisti
+Update cache|Päivitä välimuisti
+Remove cache|Poista välimuisti
+
+
+//
+// Extensions to the standard File open dialog
+//
+
+Recent:|Edelliset:
+All files|Kaikki tiedostot
+View|Näytä
+Open image file|Avaa kuvatiedosto
+Save image as|Tallenna nimellä
+Select destination folder...|Valitse kohdehakemisto...
+Supported file types|Kaikki tuetut kuvamuodot
+
+
+//
+// Options dialog
+//
+
+Viewer|Kuvankatselu
+Viewer behavior|Katseluasetukset
+Show title bar only when mouse hovers over image|Näytä otsikkorivi ainoastaan kun hiiri on kuvan päällä
+Open in full screen mode|Avaa kuvat koko ruutuun
+Hide the progress display|Piilota tilailmaisin
+Auto-size image to window|Säädä koko automaattisesti
+Only shrink|Ainoastaan pienennä
+Auto-shrink when too large in full screen mode|Pienennä automaattisesti monitoria suuremmat kuvat
+Title bar text|Otsikkorivin teksti
+Image resolution|Kuvaresoluutio
+Full file path|Täydellinen hakemistopolku
+Image overlay text|Kuvateksti
+off|suljettu
+top|ylös
+bottom|alas
+left|vasemmalle
+center|keskelle
+right|oikealle
+
+Thumbnail icons|Pikkukuvat
+Maximum icon size:|Suurin kuvakoko:
+Icon spacing:|Kuvien väli:
+Automatically create cache|Tallenna välimuisti aina
+Compress cache files|Pakkaa välimuisti
+Icon size stored in cache overrides selected icon size|Kuvan koko välimuistissa ohittaa valitun kuvan koon
+Close index window when opening an image|Sulje pikkukuvat kuva avattaessa
+Translucent background|Läpinäkyvä tausta
+Auto-background color|Automaattinen taustaväri
+Window background color|Pikkukuvien taustaväri
+Title bar text|Otsikkorivin teksti
+Show full directory path|Näytä koko hakemistopolku
+Show number of images|Näytä kuvien lukumäärä
+
+Misc|Sekalaiset
+Interface language:|Ohjelman kieli:
+Recent directories and last file memory|Viimeisimmät hakemistot ja viimeisin tiedosto
+Clear on program exit|Tyhjennä ohjelman sulkeutuessa
+Clear now|Tyhjennä nyt
+File type associations:|Tiedostotyyppi yhdistykset:
+Edit associations...|Muokkaa yhdistysten...
+
+Image|Kuva
+Image file information|Kuvan tiedot
+
+Source file|Lähdetiedosto
+File name|Tiedostonimi
+File path|Hakemistopolku
+Dimensions|Mitat
+Color format|Väriformaatti
+Compression|Pakkaus
+File format|Tiedostomuoto
+File time|Päivämäärä
+File size|Tiedostokoko
+Name/title|Nimi/Otsikko
+Comment|Kommentit
+Author|Kuvan tekijä
+Copyright|Tekijänoikeudet
+Date created|Luotu
+Page|Sivu
+Source/device|Kuvalähde
+Pixel density|Kuvaresoluutio
+Orientation|Käännä
+GPS geotag|GPS geotag
+Keyword|Avainsana
+
+About|Ohjelmasta
+Author:|Tekijä:
+Visit our WWW site for updates and more great apps!|Hae päivitykset ja muita hienoja ohjelmia nettisivultamme!
+Please make a donation if you enjoy using this program!|Tee lahjoitus jos pidät tästä ohjelmasta!
+
+
+//
+// Image adjustment dialog
+//
+
+Image adjustment|Värinsäädöt
+Contrast:|Kontrasti:
+Brightness:|Valoisuus:
+Sharpness:|Terävöinti:
+Hue:|Sävy:
+Saturation:|Kylläisyys:
+Gamma:|Gamma:
+Luminance:|Luminanssi:
+Red-bias:|Punainen:
+Green-bias:|Vihreä:
+Blue-bias:|Sininen:
+Invert colors|Käänteinen
+Rotate image:|Käännä kuvaa:
+Reset|Palauta
+Save|Tallenna
+Cancel|Peruuta
+OK|OK
+
+
+//
+// Create slide show script dialog
+//
+
+Create slideshow script|Luo kuvaesitystiedosto
+File name:|Tiedostonimi:
+Image progression|Kuvanvaihto
+No delay between images|Ei viivettä kuvien välillä
+Wait for keypress or mouseclick|Odota näppäimen tai hiiren painallusta
+Delay|Odota
+seconds between images|sekuntia kuvien välillä
+Sort files alphabetically|Lajitella tiedostoja aakkosjärjestyksessä
+Write full file paths|Kirjoita täydellinen hakemistopolku
+Loop slideshow continuously|Näytä kuvaesitystä toistuvasti
+Edit in Notepad before executing|Muokkaa esitystä Muistiossa ennen katselua
+Delete script file when finished|Poista esitystiedosto esityksen jälkeen
+Create!|Luo
+Cancel|Peruuta
+Note:   You can at any time press 'pause' to pause the slide show, or 'escape' to quit it.|Huom: Voit milloin tahansa painaa 'pause'-painiketta keskeyttääksesi tai 'esc'-painiketta lopettaaksesi esityksen.
+
+
+//
+// File rename dialog
+//
+
+Rename image file|Nimeä kuva uudelleen
+Old name:|Vanha nimi:
+New name:|Uusi nimi:
+Rename!|Nimeä
+
+
+//
+// Messages and misc stuff
+//
+
+Attention!|Varoitus!
+Do you really want to delete this?|Haluatko todella poistaa tiedoston?
+Couldn't create script file!|Ei voinut luoda skriptitiedostoa
+File operation failed!|Tiedosto-operaatio epäonnistui!
+
+// Install options
+Associate supported file types with Image Eye.|Tunnistetut tiedostomuodot Image Eyeen
+Continue >|Jatka >

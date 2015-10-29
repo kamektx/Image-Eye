@@ -1,0 +1,272 @@
+////////////////////////////////////////////////////////////////////////////
+// Turkish (Türkçe) translation of Image Eye - by LT., langturk@gmail.com //
+////////////////////////////////////////////////////////////////////////////
+
+
+//
+// Viewer context menu
+//
+
+File|Dosya
+View|Göster
+Slideshow|Slayt Gösterisi
+Index|Katalog
+Options|Seçenekler
+Restore window|Eski Durumuna Getir
+Close|Kapatmak
+Help|Yardým
+
+// View->
+Fullscreen mode|Tam Ekran Modu
+Topmost window|Her Zaman Üstte
+Freeze window|Pencereyi Kilitle
+Size window to image|Pencereyi resme göre boyutlandýr
+Size image to window|Resmi pencereye göre boyutlandýr
+Trim image to window|Resmi pencereye göre kýrp
+Restore original size|Orjinal boyut
+
+Rotate image -90°|Resmi -90° Çevir
+Rotate image +90°|Resmi +90° Çevir
+Rotate image 180°|Resmi 180° Çevir
+Mirror image vertically|Resmi Dikey Çevir
+Mirror image horizontally|Resmi Yatay Çevir
+Zoom in|Yakýnlaþtýr
+Zoom out|Uzaklaþtýr
+Zoom to factor|Zoom Ayarlarý
+Zoom to 10% size|%10 boyutuna getir
+Zoom to 25% size|%25 boyutuna getir
+Zoom to 50% size|%50 boyutuna getir
+Zoom to 75% size|%75 boyutuna getir
+Zoom to 100% size|%100 boyutuna getir
+Zoom to 150% size|%150 boyutuna getir
+Zoom to 200% size|%200 boyutuna getir
+Zoom to 300% size|%300 boyutuna getir
+Zoom to 400% size|%400 boyutuna getir
+Use as desktop wallpaper|Duvar Kaðýdý Olarak Ayarla
+Send window to back|Arka Plana Gönder
+
+// File->
+Load new...|Yeni Resim Aç...
+Next image file|Sonraki Resim Dosyasý
+Previous image file|Önceki Resim Dosyasý
+First image file in directory|Dizindeki Ýlk Resim Dosyasý
+Last image file in directory|Dizindeki Son Resim Dosyasý
+Close all image windows|Tüm Pencereleri Kapat
+Spawn new...|Farklý Pencerede Aç...
+Spawn next image|Sonrakini Farklý Pencerede Aç
+Spawn previous image|Öncekini Farklý Pencerede Aç
+Image file information...|Resim Bilgisi...
+Save as...|Farklý Kaydet...
+Reload from file|Dosyadan Yükle
+Copy file...|Kopyala...
+Move file...|Taþý...
+Rename file...|Yeniden Adlandýr...
+Delete file...|Sil...
+Erase file...|Sil (Tamamen) ...
+Delete this & show next...|Sil & Sonrakini Göster...
+Erase this & show next...|Sil (Tamamen) & Sonrakini Göster...
+Copy to clipboard|Panoya Kopyala
+Paste from clipboard|Panodan Yapýþtýr
+Capture a screen shot|Ekran Görüntüsü Yakala
+Capture a window shot|Pencere Görüntüsü Yakala
+
+// Slideshow->
+Create slideshow script|Slayt Gösterisi Betiði Yap
+Run in fullscreen mode|Tam Ekran Modunda Çalýþtýr
+
+
+//
+// Index context menu (only the items not also on the viewer context menu)
+//
+
+View image|Resmi Göster
+View index|Katalogu Göster
+View slideshow|Slayt Gösterisini Göster
+Edit slideshow|Slayt Gösterisini Düzenle
+Open|Aç
+Recurse sub-directories|Alt dizinleri yinele
+Sort icons|Simgeleri Sýrala
+Icon cache|Simge Önbelleði
+
+// File->
+Save index as bitmap...|Katalogu bitmap olarak kaydet...
+
+// View->
+Directories|Dizinler
+Non-image files|Resim olmayan dosyalar
+Names (1 line)|Ýsimler (1 satýr)
+Names (2 lines)|Ýsimler (2 satýr)
+Names (3 lines)|Ýsimler (3 satýr)
+Names (4 lines)|Ýsimler (4 satýr)
+Resolutions|Çözünürlük
+File extensions|Dosya Uzantýsý
+File dates|Dosya Tarihleri
+File sizes|Dosya Boyutlarý
+
+// Sort->
+By name|Ýsme Göre
+By full path|Tüm Dizine Göre
+By image size|Resim Boyutuna Göre
+By file size|Dosya Boyutuna Göre
+By file date|Dosya Tarihine Göre
+
+// Cache->
+Recreate|Tekrar Oluþtur
+Save cache|Önbelleði Kaydet
+Update cache|Önbelleði Güncelle
+Remove cache|Önbelleði Kaldýr
+
+
+//
+// Extensions to the standard File open dialog
+//
+
+Recent:|En Son:
+All files|Tüm Dosyalar
+View|Göster
+Open image file|Aç
+Save image as|Farklý Kaydet
+Select destination folder...|Hedef Klasörü Seç...
+Supported file types|Desteklenen Dosya Tipleri
+
+
+//
+// Options dialog
+//
+
+Viewer|Görüntüleyici
+Viewer behavior|Görüntüleyici Özellikleri
+Show title bar only when mouse hovers over image|Baþlýk çubuðunu yanlýzca resmin üzerinde fare ile gezerken göster
+Open in full screen mode|Tam ekran modunda aç
+Hide the progress display|Görüntüleme sürecini gizle
+Auto-size image to window|Pencereye göre otomatik boyutlandýr
+Only shrink|Yanlýzca küçült
+Auto-shrink when too large in full screen mode|Tam ekran modunda dahi çok büyükse otomatik küçült
+Title bar text|Baþlýk çubuðu metini
+Image resolution|Resim çözünürlüðü
+Full file path|Dosya dizinin hepsi
+Image overlay text|Resim Üzerindeki Metin
+off|Off
+top|Üst
+bottom|Alt
+left|Sol
+center|Orta
+right|Sað
+
+Thumbnail icons|Katalog Simgeleri
+Maximum icon size:|Maks. simge boyutu:
+Icon spacing:|Simge aralýðý:
+Automatically create cache|Önbelleði otomatik oluþtur
+Compress cache files|Önbellek dosyalarýný sýkýþtýr
+Icon size stored in cache overrides selected icon size|Simge boyutunu önbellekte saklanan seçilen simge boyutunu geçersiz kilar
+Close index window when opening an image|Resim açýlýnca katalog penceresini kapat
+Translucent background|Arkaplan Saydam
+Auto-background color|Arkaplan otomatik Rengi
+Window background color|Arkaplan pencere Rengi
+Title bar text|Baþlýk çubuðunda görünecek metin
+Show full directory path|Tüm dizin yolunu göster
+Show number of images|Resim sayýsýný göster
+
+Misc|Diðer
+Interface language:|Arayüz dili:
+Recent directories and last file memory|En son dizinler ve son dosya hafýzasý
+Clear on program exit|Programdan çýkarken temizle
+Clear now|Þimdi temizle
+File type associations:|Dosya tipi birlikteliði:
+Edit associations...|Degistir tipi dernekler...
+
+Image|Resim
+Image file information|Resim Bilgisi
+File name|Dosya adý
+File path|Dosya dizini
+Dimensions|Boyut
+Color format|Renk formati
+Compression|Sýkýþtýrma
+File format|Biçim
+File time|Zaman
+File size|Boyut
+Name/title|Ýsim/Baþlýk
+Comment|Yorum
+Author|Yapýmcý
+Copyright|Telif Hakký
+Date created|Date created
+Page|Page
+Source/device|Kaynak/Araç
+Pixel density|Piksel Yoðunluðu
+Orientation|Uyumlandýrma
+GPS geotag|GPS cografi etiket
+Keyword|Kelimeler
+
+About|Hakkýnda...
+Author:|Yapýmcý:
+Visit our WWW site for updates and more great apps!|Güncellemelere ve diðer programlara ulaþmak için sitemizi ziyaret edin!
+Please make a donation if you enjoy using this program!|Eger bu programin keyfini Lütfen bagis yapin!
+
+
+//
+// Image adjustment dialog
+//
+
+Adjust image...|Resmi düzenle...
+Image adjustment|Resim düzenle
+Contrast:|Kontrast:
+Brightness:|Parlaklýk:
+Sharpness:|Keskinlik:
+Hue:|Ton:
+Saturation:|Doygunluk:
+Gamma:|Gamma:
+Luminance:|Aydýnlýk/Karanlýk:
+Red-bias:|Kýrmýzý Sapma:
+Green-bias:|Yeþil Sapma:
+Blue-bias:|Mavi Sapma:
+Invert colors|Tersine Çevir
+Rotate image:|Resmi Çevir:
+Reset|Sýfýrla
+Save|Kaydet
+Cancel|Ýptal
+OK|OK
+
+
+//
+// Create slide show script dialog
+//
+
+Create slideshow script|Slay Gösterisi Betiði Oluþtur
+File name:|Dosya Adý:
+Image progression|Ýlerleme
+No delay between images|Resimler arasý gecikme olmasýn
+Wait for keypress or mouseclick|Fare týklamasýný veya klavyeyi bekle 
+Delay|Gecikme
+seconds between images|saniye (resimler arasý)
+Sort files alphabetically|Alfabetik siralama dosyalari
+Write full file paths|Tüm dosya dizinlerini yaz
+Loop slideshow continuously|Slay gösterisini devamlý çalýþtýr
+Edit in Notepad before executing|Çalýþtýrmadan önce not defteri ile düzenle
+Delete script file when finished|Bitince betik dosyasýný sil
+Create!|Oluþtur!
+Cancel|Ýptal
+Note:   You can at any time press 'pause' to pause the slide show, or 'escape' to quit it.|Not: Slayt gösterisini istediðiniz zaman  durdurmak için 'pause', sonlandýrmak için ise 'Esc' tuþuna basabilirsiniz.
+
+
+//
+// File rename dialog
+//
+
+Rename image file|Yeniden Adlandýr
+Old name:|Eski Ýsim:
+New name:|Yeni Ýsim:
+Rename!|Adlandýr!
+
+
+//
+// Messages and misc stuff
+//
+
+Attention!|Dikkat!
+Do you really want to delete this?|Dosyayý gerçekten silmek istiyor musunuz?
+Couldn't create script file!|Betik dosyasý oluþturulamadý!
+File operation failed!|Dosya iþlemi baþarýsýz!
+
+// Install options
+Associate supported file types with Image Eye.|Desteklenen dosya biçimlerini Image Eye ile iliþkilendir.
+Continue >|Devam >

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Slide show scripts</TITLE>
+<style>@import url(../style.css);</style>
+</HEAD>
+
+<BODY>
+
+<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE=".ies">
+	<PARAM NAME="Keyword" VALUE="slide show scripts">
+</OBJECT>
+
+<P><H1>Slide show scripts</H1></P>
+
+<P><CENTER><IMG SRC="../img/bird.gif"></CENTER></P>
+
+<P>
+<EM>Y</EM>ou can use <I>Image Eye</I> to display simple slide shows.
+The viewer and the index windows both have menu commands that help you create a slide show script.
+But you can also create and edit more advanced scripts 'by hand' using any text editor.<BR>
+<BR>
+A slide show file is a text formatted file with an <I>.IES</I> extension.
+It must start with the text <CODE>ImageEye SlideShow {</CODE> followed by a variable number of statements and terminated with a <CODE>}</CODE>.
+A statement is a commands string followed by a variable number of argument strings terminated by a <CODE>;</CODE>.
+A string is a sequence of characters terminated either by a white space or a <CODE>;</CODE>.
+If you want to include white-space or <CODE>;</CODE> in the string, enclose the whole string in a <CODE>"</CODE>-pair.
+To insert a <CODE>"</CODE> character in a string, use <CODE>""</CODE>.
+You can also use C++ style comments: <CODE>/* ... */</CODE> for a multi-line comment or <CODE>//</CODE> for an 'until-the-end-of-the-line' comment.<BR>
+<BR>
+<I>Note:</I> The text may be encoded either using the Windows 1252 code page (extended ISO 8859-1), or as UTF-8 encoded Unicode.<br>
+<br>
+Here is an example named <I>TEST.IES</I>:<BR>
+</P>
+<UL><CODE><PRE>/* 
+ * This is an example slide show file
+ */
+
+ImageEye SlideShow {
+
+  // First display a welcome picture and play a sound!
+  display welcome.jpg; 
+  shell "Play" "c:\windows\media\chord.wav";
+  delay key;    // Wait for a keypress
+
+  // Then display some product adds
+  display prod1.bmp; delay 5;
+  display "product 2.jpg"; delay 5;
+
+  // Finally pop up a text file with further info
+  shell open moreinfo.txt;
+
+  // Toggle between two images until user press Esc
+  loop {
+    display "forever.png";
+    display "and ever.png";
+  }
+}</PRE></CODE>
+</UL>
+</P>
+
+<P>
+These are the available commands:<BR>
+<BR>
+<UL>
+<TABLE>
+<TR><TD width=140><CODE>delay <I>&lt;n&gt;</I></CODE><TD>Pause <I>&lt;n&gt;</I> seconds before continuing the slide show.<BR>
+<TR><TD><CODE>delay key</CODE><TD>Wait for the user to press any key or left mouse button.<BR>
+<TR><TD><CODE>display <I>&lt;str&gt;</I></CODE><TD>Display the image file <I>&lt;str&gt;</I>.<BR>
+<TR><TD><CODE>loop { <I><B>...</B></I> }</CODE><TD>Loops the statements <I><B>...</B></I> until <I>Esc</I> is pressed.<BR>
+<TR><TD><CODE>loop <I>&lt;n&gt;</I> { <I><B>...</B></I> }</CODE><TD>Loop <I>&lt;n&gt;</I> times the statements <I><B>...</B></I><BR>
+<TR><TD><CODE>set <I>&lt;x&gt;</I> <I>&lt;n&gt;</I></CODE><TD>Set option <I>&lt;x&gt;</I> to <I>&lt;n&gt;</I>.<BR>
+<TR><TD><CODE>shell <I>&lt;str&gt;</I></CODE><TD>Run the program file <I>&lt;str&gt;</I>.<BR>
+<TR><TD><CODE>shell <I>&lt;verb&gt;</I> <I>&lt;str&gt;</I></CODE><TD>Execute the Windows shell command <I>&lt;verb&gt;</I> on the document <I>&lt;str&gt;</I>.<BR>
+</TABLE>
+</UL>
+Options for the set command are:<BR>
+<BR>
+<UL>
+<TABLE>
+<TR><TD width=140><CODE>AutoSizeImage <I>on/off</I></CODE><TD>Set auto-sizing of image to video size <I>(default: off)</CODE><TD>.<BR>
+</TABLE>
+</UL>
+<I>Note: </I>Don't forget to terminate each statement by a <CODE>;</CODE>
+</P>
+<BR>
+
+</BODY>
+</HTML>

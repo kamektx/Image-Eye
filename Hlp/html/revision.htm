@@ -1,0 +1,935 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Revision history</TITLE>
+<style>@import url(../style.css);</style>
+</HEAD>
+
+<BODY>
+
+<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="revision history">
+	<PARAM NAME="Keyword" VALUE="version history">
+	<PARAM NAME="Keyword" VALUE="history">
+</OBJECT>
+
+<P><H1>Revision history</H1></P>
+
+<P><CENTER><IMG SRC="../img/bird.gif"></CENTER></P>
+
+
+<H2>Version 9.1 <FONT color=#A0A0A0 size=-2>- 2015-11-01 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Image Eye and the underlying ieC++ library are now both Open Source under the GPL v3 license and available on GITHub.<BR></LI><BR>
+
+<LI>The window "glass" effect is now working on Windows 8/10 (for index windows and for viewer windows when the image has alpha or transparency and "Translucent background" enabled).<BR></LI><BR>
+
+<LI>Added a new "Auto-background color" viewer option. When enabled, it tries to compute a pleasant background color by examining the image. It's used for the letter-box borders in full screen mode and as background to transparent images (in windowed mode only if "Translucent background" is disabled). NB; if a background color is available as meta data (PNG and GIF files), then that has priority. If the auto-option is disabled, the selected "Window background color" is always used.<BR></LI><BR>
+
+<LI>40% faster JPEG decoding (thanx to Huffman look-up tables, SIMD-optimized YCbCr color conversion and using a secondary thread for IDCT, upsampling and YCbCr&rarr;RGB).<BR></LI><BR>
+
+<LI>Added support for .JPEG's using Arithmetic-encoding (this gives 5-10% smaller files with an identical image compared to the normal Huffman-encoding - but alas it is not very widely supported since this optional part of the JPEG spec was covered by a patent until recently).<BR></LI><BR>
+
+<LI>Added support for .LBM images using the old Amiga modes HAM8, HAM6 and Half-Brite.<BR></LI><BR>
+
+<LI>Added supported for APNG - Animated PNG's (.PNG or .APNG).<BR></LI><BR>
+
+<LI>Reduced the flickering of the cursor when switching between images.<BR></LI><BR>
+
+<LI>Added a "Sort files alphabetically" option to the "Create Slideshow" dialog.<BR></LI><BR>
+
+<LI>Fixed several issues with animated .GIF's.<BR></LI><BR>
+
+<LI>Faster sorting and better handling of folders with many files in index mode.<BR></LI><BR>
+
+<LI>Many fixes and minor improvements.<BR></LI><BR>
+
+</UL>
+
+</P><BR>
+
+
+<H2>Version 9.0 <FONT color=#A0A0A0 size=-2>- 2013-11-18 -</FONT></H2>
+<CENTER><B>20<SUP>th</SUP> Anniversary Edition!</B></CENTER>
+<P>
+
+<I>Main improvements:</I>
+<UL>
+
+<LI>Now available as both an x86 (32-bit) version and a brand new x64 (64-bit) version. The x64 version is a bit faster – e.g. ~10% faster JPEG decoding.<BR></LI><BR>
+
+<LI>Added true support for "deep color" images (16 bits/color component). Earlier versions would read such files too, but threw away the lower 8 bits. Color adjustments, image resizing et c are now done at the full data precision.<BR></LI><BR>
+
+<LI>Added support for "HDR" images (high dynamic range images with than 32-bit floating point/color component). Image processing operations are done at full precision here too.<BR></LI><BR>
+
+<LI>High quality dithering is used when displaying deep color and HDR images. Neither Windows, nor most displays support more 32-bit display modes (8 bits/color component), which most apps solve by truncating higher bit depth data. This can cause ugly "banding" artifacts in smooth gradients. Adding the dithering takes a fair bit of CPU-power but can greatly improve the perceived image quality.<BR></LI><BR>
+</UL>
+
+<I>More improvements:</I>
+<UL>
+
+<LI>If you open multiple Image Eye windows, they will now all run in the same process. This makes new windows open faster and conserves memory. The image caching and preloading system also works more effectively and use less total memory. (One drawback though; if one file hangs it, then they all go down...)<BR></LI><BR>
+
+<LI>You can now zoom in on an image until it reaches the maximum size that Windows will allow for a bitmap (typically 2GB RAM / ~512 Megapixels for the x64 version). The cursor will temporarily change to a stop sign when you hit the limit.<BR></LI><BR>
+
+<LI>Dithering is also used for superior display in 15/16-bit display modes (5 bits/color component).<BR></LI><BR>
+
+<LI>Added a View->Freeze window option to the index window. If you set it, the index window will not resize to fit the icons if you browse to a different folder. Also, if you close it, then open a new index window, it'll remember the size and position from last time.
+
+<LI>Image decoding progress is now shown in the Windows task-bar (Windows Vista/7/8 only).<BR></LI><BR>
+
+<LI>Added support for the Radiance RGBE HDR image format (.HDR/.PIC/.IMG).<BR></LI><BR>
+
+<LI>Added support for .TIFF's and .PSD's with floating point HDR data.<BR></LI><BR>
+
+<LI>Added support for .TIFF's with SGI RLE compressed LogLuv and LogL-format HDR data.<BR></LI><BR>
+
+<LI>Added a "Slideshow->Slideshow" command (short key: S). It creates a slideshow script and runs it without further ado (bypassing the "Create slideshow script" dialog, but using your last used setting).<BR></LI><BR>
+
+<LI>Added a Chinese translation.<BR></LI><BR>
+
+<LI>Added SSE4.1 instruction support.<BR></LI><BR>
+
+<LI>Built with our new ieC++ v2.0 library ("Image Engine in C++").<BR></LI><BR>
+</UL>
+
+</P><BR>
+
+
+<H2>Version 8.0 <FONT color=#A0A0A0 size=-2>- 2010-08-26 -</FONT></H2>
+<P>
+<I>General improvements:</I>
+<UL>
+
+<LI>Image Eye is now "donationware" for non-commercial use.
+This is a type of freeware.
+There's no fee to use it, no nag boxes, no advertising, no time limit, no reg-codes, and no crippled features.
+However we do make this plea, that if you like it and use it, you can/should to make a voluntary donation - both as a "thank you", and to support the continued development of Image Eye.<BR><BR>
+For commercial use, we do ask for a small license fee.<BR><BR>
+To make a donation, or to license it for commercial use, please visit: http://www.fmjsoft.com/imageeye.html
+<BR></LI><BR>
+
+<LI>Added parallel processing support for several operations - boosting performance considerably when running on modern multi-core CPU's.<BR></LI><BR>
+
+<LI>Unicode text is now supported - both for file names and for translations of the user interface.<BR></LI><BR>
+
+<LI>Added support for "keyword" text meta data.<BR></LI><BR>
+
+<LI>Added support for several types of EXIF-format camera meta data: Manufacturer, Model, Exposure time, F-Number, ISO speed rating, Shutter speed, Aperture, Exposure bias, Flash, Focal length, Exposure mode, White balance.<BR></LI><BR>
+
+<LI>Added support for Adobe Extensible Metadata Platform ("XMP") text meta data with the following file types: .JPEG/.JPG, .PNG, .GIF, .PSD, .TIFF.<BR></LI><BR>
+
+<LI>The program now supports the Windows Vista / 7 "Default programs" and "Open with" features (this replaces the deprecated "file types" tab in the options).<BR></LI><BR>
+
+<LI>The program settings will now be remembered (stored in the Windows registry) *only* if the program has been installed using Setup.exe. I.e. if you run Image Eye.exe on a machine where it has not been installed, then it wont leave any traces on that system. This can be usefull if e.g. running it on a borrowed computer.<BR></LI><BR>
+
+<LI>Several additional performance enhancements through rewrites & code optimizations, e.g. ~10% faster JPEG decoder.<BR></LI><BR>
+</UL>
+
+<I>Viewer improvements:</I>
+<UL>
+
+<LI>The background is now translucent (with "glass effect") when viewing transparent images, or if you make the viewer window larger than the image (NB, this can be turned off in the viewer options, and it is automatically disabled in fullscreen mode; furthermore, it's not availabe in Windows XP, and neither is it when viewing 1..8-bit non-transparent images).<BR></LI><BR>
+
+<LI>When the viewer window is not captioned, any images with transparency will now have a transparent background, i.e. they'll be "look through" (when the window is captioned, it gets the translucent background).<BR></LI><BR>
+
+<LI>File directories are now parsed by a background thread that caches the file names in memory. This makes the "Next / Previous image" commands much faster when there's very many files in a directory, or when working e.g. with network drives.<BR></LI><BR>
+
+<LI>Multi-core (parallel processing) support for very much faster resampling (scaling) of large images.<BR></LI><BR>
+
+<LI>Additional image resampling speed improvements through various tricks and code improvements, e.g. better cache usage &amp; a bit of data prefetching, data dependency optimizations, and new SSSE3 instruction code paths (if your CPU supports it).<BR></LI><BR>
+
+<LI>Multi-core (parallel processing) support for faster image adjustments (color, contrast, sharpness et c).<BR></LI><BR>
+
+<LI>The image adjustment 'Sharpness' control now has a separate (considerably faster) code path for grayscale images.<BR></LI><BR>
+
+<LI>Improved the file open dialog:<br>
+<br>
+<ul>
+<LI>It is now resizeable, i.e. you can enlarge it in order to more easily browse among many files.<BR></LI>
+<LI>The "recent" (paths) list now looks better.<BR></LI>
+<LI>The right-hand preview pane has been replaced with a smaller preview image below the file list.<BR></LI>
+<LI>File information is shown next to the preview image (file type, resolution, comments - if any).<BR></LI>
+<LI>As an alternative to the "View" button, you can click on the preview image to open it.<BR></LI>
+</ul>
+</LI><BR>
+
+<LI>Added support for displaying up to three overlay texts of various kinds (e.g. comment meta data - c.f. the viewer options).<BR>
+NB; these are show only when the viewer window is captioned (i.e. when you move the mouse over it).<BR></LI><BR>
+
+<LI>The "Next / Previous image file" commands will now also show images from file links.<BR></LI><BR>
+
+<LI>Improved compatibility with Windows 7 and Vista.<BR></LI><BR>
+
+</UL>
+
+<I>Index improvements:</I>
+<UL>
+
+<LI>Multi-core support for parallell decoding of multiple thumbnail images.<BR></LI><BR>
+
+<LI>For a more modern look, the image icons are now drawn with a simple black border, replacing the 'button' style. It now also high-lights when you move the mouse over an icon.<BR></LI><BR>
+
+<LI>Added support for a translucent background ("glass effect" - NB; not available in Windows XP).<BR></LI><BR>
+
+<LI>You can now navigate using the keyboard (cursor keys move focus, enter viewes, context key shows menu).<BR></LI><BR>
+
+<LI>You can now select multiple icons by holding down control or shift while clicking with the mouse (or using the enter key), then right click to do a copy/move/delete on all the selected files.<BR></LI><BR>
+
+<LI>Added an option to show image comments. (Note: if you are using index cache files created by an earlier version of Image Eye, then you need to delete the cache before you see any comments).<BR></LI><BR>
+
+<LI>Smarter automatic window sizing.<BR></LI><BR>
+
+<LI>You can now double-click (on the background, not on an icon) to a maximize or restore the window. Also, the mouse "browse back" button now navigates to the parent directory.<BR></LI><BR>
+
+<LI>An option named "Icon size stored in cache overrides selected icon size" replaces the earlier per-directory "Save options in cache file" option.<BR></LI><BR>
+
+<LI>Link files now also get image icons, and can be opened the same as other files.<BR></LI><BR>
+
+</UL>
+
+<I>Axed features:</I>
+<UL>
+<LI>Dropped support for older Windows versions - minimum required OS version is now Windows XP with SP3.<BR></LI><BR>
+<LI>Dropped printing support (there are better ways to print, with more layout control).<BR></LI><BR>
+<LI>Dropped some seldom used file formats (.FIF, .JP2/.JPC, .MAC, .NEO, .PIC, .PBM/.PGM/.PNM/.PPM, .PXR, .RAS). NB: these can still be read &amp; converted using our Any Image software.<BR></LI><BR>
+<LI>Dropped MMX instruction support (MMX was superceeded by SSE2 with the Pentium 4 and later).<BR></LI><BR>
+The axing of these features served to reduce the executable size by ~100KB (a saving which unfortunately was eaten up by the size of the new multi-core run-time).<BR>
+</UL>
+
+</P><BR>
+
+
+<H2>Version 7.6 <FONT color=#A0A0A0 size=-2>- 2008-12-20 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Several fixes and minor changes made for Windows Vista compatibility.<BR></LI><BR>
+
+<LI>Added support for several more obscure variants of TIFF files: tiled images, subsampled chroma YCbCr images, plane-separated images, plus an old type of JPEG-in-a-TIFF.<BR></LI><BR>
+
+<LI>When displaying multi-page files, the current page number and the total number of pages are now shown in the title bar.<BR></LI><BR>
+
+<LI>Image pre-caching now also works when browsing images in reverse file name order.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 7.5 <FONT color=#A0A0A0 size=-2>- 2008-06-24 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Updated & improved design of the context menus.<BR></LI><BR>
+
+<LI>Smarter/faster display-refresh - now only updates window regions that have been obscured.<BR></LI><BR>
+
+<LI>Much faster resampling (resizing) of grayscale images.<BR></LI><BR>
+
+<LI>Faster resampling (resizing) of color images at common zoom-factors (4x, 2x, 1/2x, 1/4x, 1/8x, 1/16x).<BR></LI><BR>
+
+<LI>Faster loading and display of uncompressed TIFF's (especially with very big files and with files with 16 bits/component).<BR></LI><BR>
+
+<LI>Added support for deflate-compressed (a.k.a. ZIP-compressed) TIFF files.<BR></LI><BR>
+
+<LI>New and improved design of the progress dialog.<BR></LI><BR>
+
+<LI>The program can now also continue a image file decode that was started, but not completed, in the "preview" window of the "Open image file" dialog. Of course, just like with previous versions, it doesn't have to re-decode an image that finished decoding and was shown in the preview either.<BR></LI><BR>
+
+<LI>Pre-caching of files are now disabled if the system is low on memory, or if the window is in 'frozen' mode.<BR></LI><BR>
+
+<LI>The "Rename file" and "Delete file" commands will now also rename or delete any associated ".iea" adjustment file.<BR></LI><BR>
+
+<LI>Improved behaviour on dual-monitor setups.<BR></LI><BR>
+
+<LI>Added a -NOREGISTRY command line option that prevents the program from reading or writing any settings in the Windows registry. This makes it possible to e.g. run it from a memory stick without leaving any traces on the host computer.<BR></LI><BR>
+
+<LI>Added parsing of GPS cooardinate data from JPEG/EXIF and TIFF. If available, this can be seen in the "Image" tab in the options.<BR></LI><BR>
+
+<LI>Dropped support for Windows 95 and NT. Also removed support for using display modes with 256 or less colors. Removal of these legacy functions serves to reduce the size of the executable, which makes the app load somewhat faster and use less memory. For the same reason 16 and 256-color versions of the menu icons are no longer included - this means that the menus wont look as good under Windows 98/ME/NT/2000 (which do not support the 32-bit icons of Windows XP and Vista).<BR></LI><BR>
+
+<LI>Many minor fixes and improvements.<BR></LI><BR>
+
+
+</UL>
+</P><BR>
+
+<H2>Version 7.4 <FONT color=#A0A0A0 size=-2>- 2007-05-07 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Added (optional) support for SSE2 instructions for several crucial operations. E.g. zooming, adjusting colors, and decoding JPEGs are now even faster than before! (i.e. if you have a CPU that supports SSE2, i.e. an Intel Pentium 4, or an AMD Athlon 64, or later).<BR></LI><BR>
+
+<LI>In the viewer tab of the options dialog, you can now select a "Window background color". This is the color of the background for transparent images, and of the borders outside the image if the window is larger than the image. NB, .GIF and .PNG files sometimes contains a background color parameter, which will, if present, always (for the specific image) override the selection that you make in the options.<BR></LI><BR>
+
+<LI>Added new keyboard shortcuts: Ctrl + left/right arrow to mirror horizontally, Ctrl + up/down arrow to mirror vertically, Numeric +/- to zoom in (alternatives to up/down arrow).<BR></LI><BR>
+
+<LI>The "auto size image to window" function is now inhibited if you manually zoom into an image and it becomes larger than the screen (which is also the maximum windows size).<BR></LI><BR>
+
+<LI>Slide show delay times can now be set with a precision of 0.1 seconds.<BR></LI><BR>
+
+<LI>Fixed memory leak when displaying animated .GIF's.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+<H2>Version 7.3 <FONT color=#A0A0A0 size=-2>- 2007-01-01 -</FONT></H2>
+<P>
+<UL>
+
+<LI>The index View &rarr; Names selection have been replaced with four selections: "Names (1 line)", "Names (2 lines)", "Names (3 lines)" and "Names (4 lines"). This allows you to get space to see longer names.<BR></LI><BR>
+
+<LI>The index file name, file size, and date display is now drawn in gray in order to more easily distinguish this info from the name text drawn in black. They are also separated from the name by a few extra pixels.<BR></LI><BR>
+
+<LI>Changed what you can do with a mouse wheel:<BR>
+<BR>
+<UL>
+<LI>Use the mouse wheel for scrolling vertically (like before).<BR></LI><BR>
+<LI>Press down the wheel to drag the window instead of scrolling it.<BR></LI><BR>
+<LI>Use left mouse-button + mouse-wheel for switching between images.<BR></LI><BR>
+<LI>Use right mouse-button + mouse-wheel for zooming.<BR></LI><BR>
+</UL></LI>
+
+<LI>'Backspace' has replaced 'Shift+Space' as the short-cut key for displaying the previous image.<BR></LI><BR>
+
+<LI>Added support for reading 32-bit RGBA icons (.ICO).<BR></LI><BR>
+
+<LI>Added for reading Vista 256x256 PNG-compressed icons (.ICO).<BR></LI><BR>
+
+<LI>If you are running under Windows XP then buttons and other controls will now use the rounder and more colorful 'XP style'.<BR></LI><BR>
+
+<LI>The program manual is now in 'HTML help' format (it now both looks better and is easier to use than when it was using the older 'WinHelp' format).<BR></LI><BR>
+
+<LI>Plus, several smaller improvements and bug-fixes.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+<H2>Version 7.2 <FONT color=#A0A0A0 size=-2>- 2006-05-04 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Added a "Save index as bitmap" command to the index window. This allows you to save a .bmp file with all of the index icons - can be useful as an image overview map.<BR></LI><BR>
+
+<LI>Added "Next/Prev image" and "Load new..." commands when you right-click on an image in 'freeze mode'. These zooms a new frozen image to fit inside the frame of the previous frozen image. Similarly new "Zoom in/out" commands (in the same menu) allows you to zoom a frozen image without changing the image frame (i.e. it clips the borders if zooming in, or adds black bars if zooming out).<BR></LI><BR>
+
+<LI>The Home / End keys now switch to the first / last image in the current directory.<BR></LI><BR>
+
+<LI>The "Save as" command now applies image adjustments (if any) to the saved image ("what you see is what you save").<BR></LI><BR>
+
+<LI>Minor bug fixes &amp; improvements.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+<H2>Version 7.1 <FONT color=#A0A0A0 size=-2>- 2005-05-24 -</FONT></H2>
+<P>
+<UL>
+
+<LI>The "Image adjustment dialog" (previously named the "Color adjustment dialog") is now non-destructive, i.e. if you re-open the dialog after previously having made some adjustments, you'll see that the adjustment sliders are in the position where you left them. And the "Reset" button will now always bring back the original image.<BR></LI><BR>
+
+<LI>Add a "Save" button to the image adjustments dialog. This creates an ".iea" file that stores the settings so that the next time you load the image file, they are automatically re-applied. This allows adjustments to be remembered without having to actually edit the image file. NB, if you want to delete the adjustments file, just hit the "Reset" button.<BR></LI><BR>
+
+<LI>Added image rotation and mirroring options to the image adjustments dialog. The main point of this is that you can save them together with the other adjustments in the new ".iea" files.<BR></LI><BR>
+
+<LI>Add support for Windows links (.lnk files) that links to image files (in both the index and the viewer).<BR></LI><BR>
+
+<LI>Added support for reading TIFF images using JPEG compression. It primarily supports the new "compression type 7" but many (if not all) of the deprecated "compression type 6" files can also be read.<BR></LI><BR>
+
+<LI>Added the "F" key as short-cut for displaying the "image file information" page (this has also added this to the file menu).<BR></LI><BR>
+
+<LI>Added a "-zoom=&lt;factor&gt;" command line option.<BR></LI><BR>
+
+<LI>Images with transparency are now composited upon a white background in the viewer.<BR></LI><BR>
+
+<LI>Clicking on an index cache file (".iei", normally a hidden file) will now open the index for the directory. Similarly clicking on one of the new adjustment files (".iea", also normally hidden) will open the image that the adjustments refer to.<BR></LI><BR>
+
+<LI>A number of minor bug fixes and improvements.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+<H2>Version 7.0 <FONT color=#A0A0A0 size=-2>- 2004-06-22 -</FONT></H2>
+<P>
+<UL>
+
+<LI>The biggest change in this version is that it can now be used for free! There's <I>no time limit</I> and <I>no functionality limitations</I> in the unregistered version! So feel free to give it too all your friends! However, there is a 'nag box' when you start it that is only removed if you pay a small fee to register it.<BR></LI><BR>
+
+<LI>Improved the graphical design of the program menu and of the color adjustment dialog.<BR></LI><BR>
+
+<LI>Languages are now handled differently. Now select the 'interface language' in the Options dialog, i.e. separate compiles for different languages is no longer necessary. You can add new languages by adding '.language' file. This is simple text file containing a 'dictionary'.<BR></LI><BR>
+
+<LI>Many of the 'control-letter' keyboard short-cuts have been replaces by 'single-key' shortcuts.<BR></LI><BR>
+
+<LI>Added a 'gamma control' slider to the color adjustments dialog.<BR></LI><BR>
+
+<LI>If an image orientation parameter is stored in a TIFF file or a JPEG file with EXIF extensions (as saved by many digital cameras with built in 'orientation sensors'), then the image is now automatically rotated for correct viewing when you open it.<BR></LI><BR>
+
+<LI>New index option: 'Close index window when opening an image'.<BR></LI><BR>
+
+<LI>New index option: 'Monitor directory for new or changed files'.<BR></LI><BR>
+
+<LI>Added support for displaying YCbCr format '.raw' files.<BR></LI><BR>
+
+<LI>The normal 'arrow keys' is no longer used for scrolling. That is now done with the numeric key-pad keys instead (and you can now scroll in the diagonal directions using the '7912' keys' - and center with the '5' key). The normal 'up-down' arrow keys now zooms in/out. The 'left-right' arrow keys rotate the image.<BR></LI><BR>
+
+<LI>The 'folder view style' (details view, icon view, et c) of the file open dialog box is now remembered.<BR></LI><BR>
+
+<LI>The 'auto size to window' function is now temporarily disabled when you manually zoom into an image (so that you can manually zoom to larger than the screen size, even if this option is enabled).<BR></LI><BR>
+
+<LI>Various bug-fixes and improvements.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+<H2>Version 6.2 <FONT color=#A0A0A0 size=-2>- 2003-03-18 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Added support for reading JPEG 2000 files (.JP2, .JPC). This new format is based on advanced wavelet compression techniques. It compresses at least 2x as much as the 'old' JPEG for the same subjective image quality. It is also more error resilient, it is better at 'progressive decoding', and it provides better control over the compression factor. Note: You can use our software Any Image (v3.2 or later) to write JPEG 2000 files.<BR></LI><BR>
+
+<LI>Improved the resampling (resizing) algorithm.<BR></LI><BR>
+
+<LI>In maximized viewer mode, the program is now minimized if you change to another active window (e.g. by pressing Alt-Tab).<BR></LI><BR>
+
+<LI>When using the command 'Recurse sub-directories' in an index window, the icons are now displayed unsorted. If you want them sorted you can always select a sort order in the View menu (if you have extremely many files it can take quite a while to sort them, thus this change...).<BR></LI><BR>
+
+<LI>Fixed a bug with the printing of larger images.<BR></LI><BR>
+
+<LI>.PNM is now recognized as an alternate extension for .PGM, .PGM and .PPM files.<BR></LI><BR>
+
+<LI>Fixed a problem with reading of some strangely formatted .PBM files.<BR></LI><BR>
+
+<LI>Fixed bug that could cause the program to crash when reading 24- and 32-bit .RAS files.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+<H2>Version 6.1 <FONT color=#A0A0A0 size=-2>- 2002-11-26 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Added support for reading DirectDraw Surfaces (.DDS files).<BR></LI><BR>
+
+<LI>Added support for reading TIFF's and PSD's with 16-bits/pixel/color component.<BR></LI><BR>
+
+<LI>When using the 'Next image' command on the last image file in a directory, or the 'Prev image' command on the first image file, then it now beeps (as before) then wraps to show the first or last image file respectively.<BR></LI><BR>
+
+<LI>The 'Slideshow...' command is now called 'Create slideshow script' and is located in a 'Slideshow' sub-menu, together with a new option 'Run in fullscreen mode' (which is what earlier versions has always done, but if you now uncheck it, it'll run in a window instead...).<BR></LI><BR>
+
+<LI>Windows icon and cursor files (.ICO and .CUR) are now shown with transparency in the index - and with a white background in the viewer.<BR></LI><BR>
+
+<LI>Various minor bug-fixes.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 6.0 <FONT color=#A0A0A0 size=-2>- 2002-02-20 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Viewer window improvements:<BR>
+<BR><UL>
+
+<LI>Added support for displaying animated GIF files.<BR></LI><BR>
+
+<LI>Added support for reading and viewing multi-page TIFF's (switch page with the next/prev image commands).<BR></LI><BR>
+
+<LI>Added a 'Hue' color control slider in the color adjustment dialog. Also, the 'invert colors' command has been moved to this dialog.<BR></LI><BR>
+
+<LI>The Next/Prev image file commands now skips bad and corrupted files.<BR></LI><BR>
+
+<LI>Added 'Copy file', 'Move file' and 'Erase file' commands to the file menu.<BR></LI><BR>
+
+<LI>The new 'Erase file' command will wipe the file contents three times with random data before it is deleted (not moved to the recycle bin) in order to make it much more difficult to 'undelete'. It will also rename it three times first in order to attempt to wipe the original name from the file directory tables.<BR></LI><BR>
+
+<LI>It is now more responsive to user input under some circumstances when using stuff over 'slow' media (floppy disks, network connections et c).<BR></LI><BR>
+
+<LI>Window borders (when the window is larger than the image) is now drawn in the 'background color' that may be specified in GIF and PNG's.<BR></LI><BR>
+
+</UL></LI>
+
+<LI>Index window improvements:<BR>
+<BR><UL>
+
+<LI>Alpha-blending and transparency is now used when drawing icons (note: only on Windows 98 or 2000 or later).<BR></LI><BR>
+
+<LI>Improved the scrolling - scrolls faster and with less flickering.<BR></LI><BR>
+
+<LI>There's now a 'Save options in cache file' toggle under 'cache' in the context menu. When enabled, all of the index options (icon sizes, what info to show, et c), plus the window size, is stored in the index cache file for the directory and are restored the next time it is read. This allows you to set special options certain directories.<BR></LI><BR>
+
+<LI>A 'View' submenu in the context menu replaces the options in the 'Index properties' dialog for selecting what file info to show.<BR></LI><BR>
+
+<LI>Added a 'File' sub-menu to context menu. It contains commands for copying, moving, renaming, deleting and erasing the file.<BR></LI><BR>
+
+<LI>The index window now detects when a file is copied, moved, deleted or renamed in the Windows Explorer and 'recreates' itself when that happens.<BR></LI><BR>
+
+<LI>When you drop files from the Explorer, they are now copied to the index directory, and the index is updated accordingly.<BR></LI><BR>
+
+<LI>Added a 'Recurse sub-directories' command.<BR></LI><BR>
+
+<LI>After doing a 'recurse subdirectories', you'll also have the added option of sorting icons 'by full path'.<BR></LI><BR>
+
+<LI>Directories are now sorted first -except when in 'recurse subdirectory' and sorting 'by full path' where each directory instead is placed at the start of the icons that it contains.<BR></LI><BR>
+
+<LI>Added an 'Add all files to Any Image' command.<BR></LI><BR>
+
+<LI>You can now select a 'foreground color' (used for the icon buttons).<BR></LI><BR>
+
+<LI>The last sort order is now remembered.<BR></LI><BR>
+
+<LI>Cache files are now saved using a background thread.<BR></LI><BR>
+
+<LI>Added several new or alternate keyboard short-cuts.<BR></LI><BR>
+
+<LI>Fixed a bug with the index not displaying the complete name of directories with a dot in the name when file extension display is off.<BR></LI><BR>
+
+<LI>Fixed problem with not always getting long file names in the title bar under some Windows versions.<BR></LI><BR>
+
+</UL></LI>
+
+<LI>Further changes and improvements:<BR>
+<BR><UL>
+
+<LI>In the file open dialog, the last file opened is now selected and the list is scrolled so that it is visible.<BR></LI><BR>
+
+<LI>There's now a 'File type associations' list in the program properties dialog that allows you to easily turn on and off individual file type associations.<BR></LI><BR>
+
+<LI>Alpha blending and transparency is now used when previewing images in the open file dialog (note: only on Windows 98 or 2000 or later).<BR></LI><BR>
+
+<LI>The 'Raw image file' dialog is gone, to open a raw image file you now need to create a text file with a .RAW extension, and containing the required information for reading the file (see the Image Eye help file for more information).<BR></LI><BR>
+
+<LI>The progress dialog now does not steal the keyboard focus. It also considers the position of the 'Start bar' so that it is not obscured.<BR></LI><BR>
+
+<LI>Some general speed improvements.<BR></LI><BR>
+
+<LI>Fixed a few minor bugs and issues.<BR></LI><BR>
+
+</UL></LI>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 5.6 <FONT color=#A0A0A0 size=-2>- 2001-12-20 -</FONT></H2>
+<P>
+<UL>
+
+<LI>The 'Next/Prev image' commands are now faster at finding the requested file when there are <I>very many </I>files in a directory.<BR></LI><BR>
+
+<LI>It now also handles sorting of international characters by using Windows 'language aware' functions.<BR></LI><BR>
+
+<LI>Added support for reading CALS (Computer Aided Acquisition and Logistics Support) type I files (.CAL, .CALS, .RAS).<BR></LI><BR>
+
+<LI>Added an 'Only shrink' option that modifies the behavior of the 'Auto size image to window' function so that it only scales down images and never scales up them.<BR></LI><BR>
+
+<LI>Added an option to turn on or off the file names in the index.<BR></LI><BR>
+
+<LI>Added a 'Print image...' command when right-clicking on image icons in the index.<BR></LI><BR>
+
+<LI>Added pixel density to the image info tab for some formats.<BR></LI><BR>
+
+<LI>Added support for reading some info from the EXIF JPEG extension (used by digital cameras).<BR></LI><BR>
+
+<LI>Rotating in maximized mode now keeps the window in maximized mode and is also 'smart' with respect to the 'auto size' and 'shrink large' options.<BR></LI><BR>
+
+<LI>Added support for Group 3/4 fax-compressed sub-format TIFF files with a 'reverse bit-ordering' (this is an unusual format that was previously displayed incorrectly).<BR></LI><BR>
+
+<LI>Fixed a problem with crashing on some corrupted PhotoShop extension blocks inside JPEG files.<BR></LI><BR>
+
+<LI>Fixed a problem with some very rare GIF files.<BR></LI><BR>
+
+<LI>Added a 48x48 icon for Windows XP.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 5.5 <FONT color=#A0A0A0 size=-2>- 2001-03-20 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Added some smart caching and background preloading of images. This can make image loading 'subjectively' appear as <I>considerably</I> faster when you're going back and forth between images in a directory.<BR></LI><BR>
+
+<LI>Added support for reading different kinds of text information from file formats that supports it in any standardized manner. These texts, and more info are found in a new scrollable 'list' in the 'properties' &rarr; 'image' dialog.<BR></LI><BR>
+
+<LI>Added an 'Add to Any Image' command (in the viewer and in the index). This allows you to easily send an image file to our dedicated image converter application, <I>Any Image</I>. You need to have <I>Any Image v1.5</I> (or later) installed for this to work.<BR></LI><BR>
+
+<LI>During a slide show, the 'pause' key can now be used to pause it. Press any other key to continue again.<BR></LI><BR>
+
+<LI>You can now hold down the mouse wheel 'button' and scroll it to browse images.<BR></LI><BR>
+
+<LI>When you right click on an icon in index mode and select properties, some info about the file is now shown in the 'image' tab.<BR></LI><BR>
+
+<LI>Zoom in is now done in steps of 25% of the original size rather than 2x. Similarly for zoom out. What's more, the 'center of view' is now preserved while zooming.<BR></LI><BR>
+
+<LI>Added a 'Zoom 2x heuristic' command (on the View menu). It uses a special heuristic algorithm to double the image size. Which one's best, the normal filtered zoom or this new one, depends on the image and your personal taste. The heuristic one is can give much sharper results, but it is also usually much more ´'blocky and pixilated'.<BR></LI><BR>
+
+<LI>Added an option to the Index to show the number of images in the directory in the title bar.<BR></LI><BR>
+
+<LI>Fixed a JPEG decoding bug on non-MMX CPUs when using the 'fast IDCT' option.<BR>
+Also fixed another JPEG decoding debug that crashed it on some very uncommon images.<BR></LI><BR>
+
+<LI>Removed support for saving GIF and RAW files. The same functionality, and much <I>more</I> is now provided by the above mentioned integration with <I>Any Image</I>.<BR>
+This keeps the EXE file size small - so that it loads fast and don't use up needlessly use up memory!<BR></LI><BR>
+
+<LI>There have also been many 'invisible' changes 'under the hood' - the entire image handling functionality has been cleaned up, improved, and isolated in a generic image-handling library called <I>EyeC++.</I> This library is used both in <I>Image Eye </I>and in <I>Any Image</I>. It will also be made available to other developers in the form of a commercial SDK.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 5.1 <FONT color=#A0A0A0 size=-2>- 2000-10-15 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Added an optional image preview window to the file open dialog.<BR></LI><BR>
+
+<LI>Improved the 'Sharpness' adjustment algorithm (better edge sharpening, and less prone to enhance noise). It will now also work on palette images although the result is still best on 24-bit images.<BR></LI><BR>
+
+<LI>Added a 'freeze window' command to the view submenu. The idea is that when you put the image window into 'freeze' mode, it will lock itself into its current position on the desktop (with no menu bars or anything) and the only thing you can do with it is right click on it to bring up a menu with the commands 'unfreeze' and 'close'. If you shut down Windows without manually closing such a frozen window, it will automatically load again in the exact same position when you next restart Windows. Just to give an example of what you could use this for, you could place 'fixed' photographs of near and dear ones on your desktop.<BR></LI><BR>
+
+<LI>Added a 'topmost' toggle to the view menu, which you can use to force an image window to stay on top of all other non-topmost windows.<BR></LI><BR>
+
+<LI>Added '-topmost' and '-freeze' command line switches.<BR></LI><BR>
+
+<LI>When the cursor does not indicate 'scroll mode', you can now move a window not only by dragging it with the mouse but also by using the arrow keys. Also, the Alt keys have now replaced the Control keys as 'scroll mode override'.<BR></LI><BR>
+
+<LI>Added a rename file command to the image windows file menu.<BR></LI><BR>
+
+<LI>Added an index option to show file extensions.<BR></LI><BR>
+
+<LI>Clicking on a directory in the index view now replaces the current index window with the new one instead adding another one. If you want to keep the current window, use 'Spawn new...' on the context menu instead, go to the new directory, and click the 'Index' button. Also, all root directories will now show driver letters (if 'show directories' is turned on) so that you can easily change drive from there. And the 'up' directory now has an icon…<BR></LI><BR>
+
+<LI>Index icons are now never enlarged, i.e. very small images are drawn with 'borders' on all sides.<BR></LI><BR>
+
+<LI>Added a 'delete script file when finished' option to the slideshow dialog.<BR></LI><BR>
+
+<LI>The zoom state is now kept when rotating.<BR></LI><BR>
+
+<LI>Added support for saving 2 and 16 color BMP files in addition to the 256- and 16M-color files supported by previous versions. Minimum color depth is automatically selected when saving an image in order to minimize the file size.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 5.0 <FONT color=#A0A0A0 size=-2>- 2000-09-12 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Added MMX instruction set support! Mainly for JPEG decoding (which can now be up to 25% faster - disc access times not counted) but also for a few other things (e.g. 40% faster resampling of an image). It will of course still work on non-MMX processors just as before.<BR></LI><BR>
+
+<LI>A new option (on by default) hides the window title bar whenever the mouse is not on top of an image window. <BR></LI><BR>
+
+<LI>Clicking and dragging an image when a 'scroll cursor' is not visible will now move the whole window (when the scroll cursor is on, you can hold down Control key and drag it).<BR></LI><BR>
+
+<LI>The Contrast and Brightness controls now preserves the color balance. This is different than how almost all other app does it - but hopefully you'll actually like this way better!<BR></LI><BR>
+
+<LI>Improved down sampling algorithm (i.e. 'shrinking' images now gives much better results).<BR></LI><BR>
+
+<LI>Added an option to display the image name on top of the image (in various selectable positions).<BR></LI><BR>
+
+<LI>Added a 'Recent directories' quick selection to the file open dialog.<BR></LI><BR>
+
+<LI>Added a slight 'texture' to the dialog backgrounds.<BR></LI><BR>
+
+<LI>Added support for reading CMYK format JPEG's, TIFF's and PSD's as well as YCCK format JPEG's.<BR></LI><BR>
+
+<LI>There's a new 'How to register' info box to help unregistered users.<BR></LI><BR>
+
+<LI>Added a 'Rename' command in index mode.<BR></LI><BR>
+
+<LI>Added support for IntelliMouse Explorer <I>'X mouse' </I>forwards/backwards buttons for switching between images.<BR></LI><BR>
+
+<LI>Added a 'Rotate 180°' command as well as two new keyboard shortcuts: <I>Ctrl-Left</I> = Rotate 90°, <I>Ctrl-Right </I>= Rotate 270°<BR></LI><BR>
+
+<LI>Added 'Zoom in 2x' and 'Zoom out 2x' commands. Keyboard shortcuts are <I>Ctrl-Up/Down</I>.<BR></LI><BR>
+
+<LI>New 'spawn next/previous image' commands open the next or previous image in a new window. These have keyboard shortcuts <I>Ctrl-PgUp / PgDn</I> or, if you prefer, <I>Ctrl-Space / Ctrl-Shift-Space</I>. Similarly you can now use <I>Space / Shift-Space</I> to display the next / previous image as alternatives to <I>PgDn / PgDn</I>.<BR></LI><BR>
+
+<LI>More new keyboard commands: <I>Tab / Shift-Tab </I>moves between all opened Image Eye image windows.<BR></LI><BR>
+
+<LI>Removed the 'video mode' menu - because it made the right mouse button menu so slow to appear. It has been replaced with a shortcut to the Windows display properties dialog (which provides the same functionality) on the view sub-menu.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 4.2 <FONT color=#A0A0A0 size=-2>- 1999-10-10 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Added a 'Send window to back' function (shortcut: Ctrl-B).<BR></LI><BR>
+
+<LI>Improved the 24 to 8 bit color conversion so that it now uses 8 bits/per component (earlier versions used 6 bit precision) to calculate the color lookup table for the final 8-bit palletized image. This gets rid of the problem where, in a 24-bit video mode, you sometimes could take a screenshot of a normal gray dialog-box or something, save it as an 8-bit GIF and it turned up all dithered and (slightly) ugly!<BR></LI><BR>
+
+<LI>Fixed a bug with not always uninstalling correctly from directories with a space in the path name.<BR></LI><BR>
+
+<LI>Fixed bug with clicking on directories boxes in the index window not working.<BR></LI><BR>
+
+<LI>Fixed a bug with the next/prev image function not working under certain conditions when started with an image file from the command line.<BR></LI><BR>
+
+<LI>Fixed a bug with some very large TIFF-files.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 4.1 <FONT color=#A0A0A0 size=-2>- 1999-07-10 -</FONT></H2>
+<P>
+<UL>
+
+<LI>When loading an image, it now tries to ensure that the lower right part is not outside the screen if not necessary.<BR></LI><BR>
+
+<LI>Fixed a bug with compressed TGA files.<BR></LI><BR>
+
+<LI>Fixed bug with the index not working on directories with a dot in their name.<BR></LI><BR>
+
+<LI>Fixed problem with parts of the adjust colors dialog sometimes appearing behind the taskbar.<BR></LI><BR>
+
+<LI>Added a 'Reload from file' function.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 4.0 <FONT color=#A0A0A0 size=-2>- 1999-04-15 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Added an installation program (setup.exe).<BR></LI><BR>
+
+<LI>Added a bunch of new command line options:<BR>
+<UL>
+<LI><I>-onlyone</I> Close any previous instance before display the new image<BR></LI><BR>
+<LI><I>-close</I> Close all Image Eye instances<BR></LI><BR>
+<LI><I>-fullscreen</I> Start in 'Full screen' mode<BR></LI><BR>
+<LI><I>-fitvideo</I> Automatically fit video mode (combined with -fullscreen)<BR></LI><BR>
+<LI><I>-title=text</I> Set the window title to 'text'<BR></LI><BR>
+<LI><I>-pos=x,y</I> Show the window at screen coordinates x,y<BR></LI><BR>
+<LI><I>-index</I> Show index for supplied directory<BR></LI><BR>
+<LI><I>-slide</I> Create and show a slideshow for supplied directory<BR></LI><BR>
+</UL></LI>
+
+<LI>Added support for reading PhotoShop (.PSD) files (Grayscale, Indexed, Duotone and RGB, 8bits/component modes only).<BR></LI><BR>
+
+<LI>Added support for reading raw image files (.RAW). This pops up a dialog where you enter the necessary parameters. Added support for writing raw interleaved RGB files.<BR></LI><BR>
+
+<LI>Added a 'Create slideshow script' options dialog (appears when you select the Slideshow command from the Viewer or from the Index).<BR></LI><BR>
+
+<LI>Added 'Hide progress bar' and display 'Full file path' options to the Viewer properties.<BR></LI><BR>
+
+<LI>Added a 'Show full directory path in title bar' option and a 'Background color' button to the Index properties.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 3.9 <FONT color=#A0A0A0 size=-2>- 1999-01-22 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Added a 'Paste from clipboard' command.<BR></LI><BR>
+
+<LI>Added a 'Trim image to window' command to the view menu. (it is only available when the window is smaller than the image).<BR></LI><BR>
+
+<LI>Added a bunch of keyboard shortcuts for common commands (see the viewer and index command sections of the help file). Examples: Ctrl-W (size image to window) and Ctrl-I (size window to image).<BR></LI><BR>
+
+<LI>Added a 'Close all image windows' command (Shortcut: Ctrl-Alt-X).<BR></LI><BR>
+
+<LI>Added a 'Delete this &amp; show next' function (Shortcut: Ctrl-X).<BR></LI><BR>
+
+<LI>The index now uses the default GUI font - which hopefully should make filenames containing e.g. Japanese multi-byte characters display better.<BR></LI><BR>
+
+<LI>Fixed bug with not removing the files during an uninstall.<BR></LI><BR>
+
+<LI>Now restores the original video mode upon exit (if you had changed it from within Image Eye).<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 3.8 <FONT color=#A0A0A0 size=-2>- 1998-08-30 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Added a Display &rarr; 'Fit to image' command that automatically selects the video mode with the best resolution for viewing an image (it wont change the bit depth though, as that would be much slower...).<BR></LI><BR>
+
+<LI>Added an 'Auto fit video mode' option. Also added an 'Auto shrink when too large' option. These two only work when the window is maximized (as they make most sense then).<BR></LI><BR>
+
+<LI>Added an 'Automatically create cache files' option for the index.<BR></LI><BR>
+
+<LI>Added 'capture a screen shot' and 'capture a window shot' commands to the viewer &rarr; File submenu.<BR></LI><BR>
+
+<LI>Added a 'sharpness' slider in the 'adjust colors' dialog (for technical reasons, this control is only enabled when viewing true-color images in true-color video modes).<BR></LI><BR>
+
+<LI>Removed the 'preview' button from the 'adjust colors' dialog and added a 'reset' button in its stead. Preview is now done automatically whenever you release one of the sliders!<BR></LI><BR>
+
+<LI>Add a 'show negative' command to the view menu that 'inverts' all colors. This can be usefull for picking out details when viewing deep-sky photographs, or if you actually have negative photographs...<BR></LI><BR>
+
+<LI>Add 'set AutoSizeImage On/Off' and 'set AutoVideoMode On/Off' commands to the slide show scripting language.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 3.7 <FONT color=#A0A0A0 size=-2>- 1998-06-16 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Windows 3.1/Win32s support has (finally) been dropped. This was necessary because I have switched to a newer compiler which has no Win32s support. W3.1 users should continue using Image Eye v3.6!<BR></LI><BR>
+
+<LI>The program now loads slightly faster!<BR></LI><BR>
+
+<LI>Added an 'Adjust colors' command to the View menu. As the name implies it lets you adjust the color of the image - using the following parameter set: contrast, brightness, color saturation, overall intensity, red-, green-, and blue-component intensities.<BR></LI><BR>
+
+<LI>Added 'zoom' commands to the View menu which let you zoom the image to 50, 75, 100, 150, 200, 300, or 400% of its original size.<BR></LI><BR>
+
+<LI>Added mouse wheel support for the index window.<BR></LI><BR>
+
+<LI>Fixed yet another bug with some kinds of TIFF files.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 3.6 <FONT color=#A0A0A0 size=-2>- 1998-04-24 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Added a file date display option for the index window properties.<BR></LI><BR>
+
+<LI>Added commands to sort the icons in the index window by name, file size, file date, or image size.<BR></LI><BR>
+
+<LI>The Next/Previous image file command in the image window now skips any files of zero size (typical of interrupted internet downloads) as well as when encountering other 'bad' files.<BR></LI><BR>
+
+<LI>The 'autosize image' option now leaves the last image in place until the new, resampled, image has been calculated.<BR></LI><BR>
+
+<LI>Fixed a 'sort-of-bug' with hanging when reading some strange GIF files having larger 'local image size' than 'global image size'.<BR></LI><BR>
+
+<LI>Fixed a problem with some uncompressed TIFF files.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 3.5 <FONT color=#A0A0A0 size=-2>- 1998-02-01 -</FONT></H2>
+<P>
+<UL>
+
+<LI>The index 'thumbnail' images can now be cached on disk for faster display (this feature works best in true-color mode). You manage the cache <I>manually</I> by using 'Save cache', 'Update cache' or 'Remove cache' from the index window's context menu. The cache is never created automatically which means your disk will not be filled with Image Eye Index cache files where you do not want them. The cache files (ImageEye.iei) can optionally be compressed reducing the disk space usage (typically by about 20%).<BR></LI><BR>
+
+<LI>Added a 'Delete file' command to the context menu for the icons in the index window.<BR></LI><BR>
+
+<LI>Added .GIF file format export.<BR></LI><BR>
+
+<LI>The space bar now has the same function as the PgDn key in the viewer (i.e. display next image in the current directory).<BR></LI><BR>
+
+<LI>Fixed bug with hanging on reading many 'animated' (multi-image) GIF's.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 3.3 <FONT color=#A0A0A0 size=-2>- 1997-10-01 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Added support for 'progressive scan' JPEG files. The JPEG decoder is also slightly faster for 'normal' JPEG files due to a more effective use of the CPU cache.<BR></LI><BR>
+
+<LI>Added a 'Display' submenu top the right mouse button image menu so you can easily change video mode (if you have Win98 or NT4 then you should also be able to select color bit depth).<BR></LI><BR>
+
+<LI>Added 'Rotate image +90°', 'Rotate image -90°', 'Mirror image vertically' and 'Mirror image horizontally' commands to the view submenu.<BR></LI><BR>
+
+<LI>Added 'mouse wheel' support for vertically scrolling images (req. Win98 or NT4 and a Msft Mouse 2 or similar to work).<BR></LI><BR>
+
+<LI>Added a 'Slideshow' command to the right mouse button menu (for both the viewer and the index windows). It creates and runs a slideshow script for all the images in the current directory.<BR></LI><BR>
+
+<LI>Fixed problem with not always receiving the 'long file name' when launching images from e.g. the Explorer (which also made the next/previous image command fail when started with a 'short' file name).<BR></LI><BR>
+
+<LI>Fixed a bug with the slide show script 'delay key' command.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 3.2 <FONT color=#A0A0A0 size=-2>- 1997-09-07 -</FONT></H2>
+<P>
+<UL>
+
+<LI>Much more 'forgiving' when reading corrupted GIF's and JPEG's: In other words it should no longer crash as often if you e.g. try to read a GIF that you started downloading from the net but interrupted before the whole image was finished...<BR></LI><BR>
+
+<LI>For the astronomers out there, I have added FITS support (Flexible Image Transport System v1.1, .FIT files).<BR></LI><BR>
+
+<LI>Added support for TIFF images using CCITT Group 3 (T.4) or Group 4 (T.6) fax compression.<BR></LI><BR>
+
+<LI>Added support for 16bit and 32bit .BMP files.<BR></LI><BR>
+
+<LI>Now uses the Windows shell for the file &rarr; delete command which means that deleted files end up in the recycle bin.<BR></LI><BR>
+
+<LI>No longer associates .ICO or .CUR files with Image Eye since Windows built in 'live icons' are better (you can still open them explicitly using the open file dialog).<BR></LI><BR>
+
+<LI>Killed a handful of bugs.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 3.1 <FONT color=#A0A0A0 size=-2>- 1997-01-20 -</FONT></H2>
+<P>
+<UL>
+
+<LI>This is the first officially promoted release of <I>Image Eye</I>.<BR></LI><BR>
+
+<LI>Removed the 'nag box' from the unregistered versions (it was a little too cruel...) - instead the text 'unregistered' is painted in the upper left corner of images and the software will disable itself after 30 days of use. The slide show feature is now also available in the unregistered version.<BR></LI><BR>
+
+<LI>Added view &rarr; Next image file / view &rarr; Previous image file (also accessible through the PgUp / PgDn keys) to quickly view the (alphabetically) next / previous image in the current directory.<BR></LI><BR>
+
+<LI>Added 'optional' support for .FIF files - Fractal Image Files. To enable it, you must have installed Iterated Systems free 32bit decoder library; Deco_32.dll version 6.0 or later. This file can downloaded from my www site.<BR></LI><BR>
+
+<LI>Image files must now have the correct file extension to be recognized by the index feature. The previous version tried to determine if it was an image file even if it had an incorrect extension. However, some file types simply were not constructed in such a way that they can be 100% reliably detected which sometimes caused the index feature to load a non-image file as some image file type, which in turn could make it crash...<BR></LI><BR>
+
+<LI>The first time the program is installed, it now asks if it should associate file types with itself. There's also a little checkbox that you can use to toggle all file associations on or off.<BR></LI><BR>
+
+<LI>Added new slide show script command "delay key" to wait for a keypress.<BR></LI><BR>
+
+<LI>Fixed a bug with missalignment of some 4bit .BMP files.<BR></LI><BR>
+
+<LI>Fixed a bug that made it crash on a few .GIF files.<BR></LI><BR>
+
+<LI>Fixed a serious bug in the printing code.<BR></LI><BR>
+
+<LI>Added the option to measure the time it takes to load an image - for comparing performance with other viewers...<BR></LI><BR>
+
+<LI>Licensed the LZW algorithm used in GIF and TIFF files from Unisys.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 3.0 <FONT color=#A0A0A0 size=-2>- 1996-12-10 -</FONT></H2>
+<P>
+<UL>
+
+<LI>First 32-bit Windows release.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+<H2>Version 2.1 <FONT color=#A0A0A0 size=-2>- 1994-01-01 -</FONT></H2>
+<P>
+<UL>
+
+Last of the (by now long forgotten) DOS versions.<BR></LI><BR>
+
+</UL>
+</P><BR>
+
+
+</BODY>
+</HTML>

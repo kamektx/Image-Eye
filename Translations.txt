@@ -1,0 +1,19 @@
+
+--------------------------------------------------------------------
+ Instructions on how to create a GUI translation file for Image Eye
+--------------------------------------------------------------------
+
+- Make a copy of e.g. the "Swedish - Svenska.language" file - open it in another text editor window and use it as a 'template' for creating your new translation.
+
+- Your new .language file contains a lot of lines each containing first a text in English followed by | and then a text in Swedish, e.g. View|Visa
+
+- Simply replace the Swedish translations with translations to your own language!
+
+- It is easy to 'preview' your translation while you are working on it - just save the file you are working on and restart Image Eye (you have to select the language in question in the Options->Misc tab first though, it is also possible to select another language, then OK, then select your language again, and OK, to view your changes without re-starting Image Eye, but that's probably not easier than simply restarting...)
+
+- Send the translation file to me (to be included with the official download archive).
+
+
+Best regards,
+
+/ Markus / FMJ-Software / fmj@fmjsoft.com

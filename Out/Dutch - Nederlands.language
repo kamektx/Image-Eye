@@ -1,0 +1,271 @@
+///////////////////////////////////////////////////////////////////////////
+// Nederlandse vertaling Image Eye - door Ing. W. Wilbie                 //
+///////////////////////////////////////////////////////////////////////////
+
+
+//
+// Viewer context menu
+//
+
+File|Bestand
+View|Bekijken
+Slideshow|Diavoorstelling
+Index|Index
+Options|Opties
+Restore window|Venster herstellen
+Close|Sluiten
+Help|Help
+
+// View->
+Fullscreen mode|Volledig scherm
+Topmost window|Bovenste venster
+Freeze window|Bevries scherm
+Size window to image|Venster aanpassen aan plaatje
+Size image to window|Plaatje aanpassen aan scherm
+Trim image to window|Plaatje afknippen op schermgrootte
+Restore original size|Herstel oorspronkelijke grootte
+Adjust image...|Plaatje instellen...
+Rotate image -90°|Roteer plaatje -90°
+Rotate image +90°|Roteer plaatje +90°
+Rotate image 180°|Roteer plaatje 180°
+Mirror image vertically|Spiegel plaatje verticaal
+Mirror image horizontally|Spiegel plaatje horizontaal
+Zoom in|Zoom in
+Zoom out|Zoom uit
+Zoom to factor|Zoom naar factor
+Zoom to 10% size|Zoom naar 10%
+Zoom to 25% size|Zoom naar 25%
+Zoom to 50% size|Zoom naar 50%
+Zoom to 75% size|Zoom naar 75%
+Zoom to 100% size|Zoom naar 100%
+Zoom to 150% size|Zoom naar 150%
+Zoom to 200% size|Zoom naar 200%
+Zoom to 300% size|Zoom naar 300%
+Zoom to 400% size|Zoom naar 400%
+Use as desktop wallpaper|Stel in als achtergrondplaatje
+Send window to back|Stuur venster naar achtergrond
+
+// File->
+Load new...|Laad nieuw bestand...
+Next image file|Volgende plaatje
+Previous image file|Vorige plaatje
+First image file in directory|Eerste plaatje in folder
+Last image file in directory|Laatste plaatje in folder
+Close all image windows|Sluit alle plaatjesvensters
+Spawn new...|Open nieuw venster...
+Spawn next image|Open volgende plaatje in nieuw venster
+Spawn previous image|Open vorige plaatje in nieuw venster
+Image file information...|Plaatjesinfo...
+Save as...|Opslaan als...
+Reload from file|Bestand opnieuw inladen
+Copy file...|Kopieer bestand...
+Move file...|Verplaats bestand...
+Rename file...|Naam bestand wijzigen...
+Delete file...|Wis bestand...
+Erase file...|Wis en overschrijf bestand
+Delete this & show next...|Wis dit & toon volgend plaatje...
+Erase this & show next...|Wis en overschrijf dit & toon volgend plaatje...
+Copy to clipboard|Kopieer naar klembord
+Paste from clipboard|Plak vanaf klembord
+Capture a screen shot|Maak schermafdruk
+Capture a window shot|Maak vensterafdruk
+
+// Slideshow->
+Create slideshow script|Maak een diashow script...
+Run in fullscreen mode|Speel af in volledig scherm-modus
+
+
+//
+// Index context menu (only the items not also on the viewer context menu)
+//
+
+View image|Vertoon plaatje
+View index|Vertoon index
+View slideshow|Vertoon diashow
+Edit slideshow|Bewerk diashow
+Open|Openen
+Recurse sub-directories|Alle sub-lades meenemen
+Sort icons|Sorteer iconen
+Icon cache|Icoon cache
+
+// File->
+Save index as bitmap...|Sla index op als bitmap...
+
+// View->
+Directories|Lades
+Non-image files|Andere bestanden
+Names (1 line)|Naam (1 regel)
+Names (2 lines)|Naam (2 regels)
+Names (3 lines)|Naam (3 regels)
+Names (4 lines)|Naam (4 regels)
+Resolutions|Resoluties
+File extensions|Bestandstypes
+File dates|Bestandsdatum
+File sizes|Bestandsgrootte
+
+// Sort->
+By name|Op naam
+By full path|Op volledige pad
+By image size|Op plaatjesgrootte
+By file size|Op bestandsgrootte
+By file date|Op bestandsdatum
+
+// Cache->
+Recreate|Opnieuw maken
+Save cache|Cache bewaren
+Update cache|Cache vernieuwen
+Remove cache|Cache verwijderen
+
+
+//
+// Extensions to the standard File open dialog
+//
+
+Recent:|Recent:
+All files|Alle bestanden
+View|Bekijken
+Open image file|Open plaatje
+Save image as|Sla plaatje op als
+Select destination folder...|Selecteer doellade...
+Supported file types|Ondersteunde bestandstypes
+
+
+//
+// Options dialog
+//
+
+Viewer|Vertoner
+Viewer behavior|Gedrag vertoner 
+Show title bar only when mouse hovers over image|Verberg titelbalk (niet als muis over plaatje is)
+Open in full screen mode|Open in volledig scherm
+Hide the progress display|Verberg de voortgangsbalk
+Auto-size image to window|Pas plaatje aan aan venster
+Only shrink|Alleen inkrimpen
+Auto-shrink when too large in full screen mode|Automatisch inkrimpen indien te groot in volledig scherm
+Title bar text|Titelbalk tekst
+Image resolution|Resolutie v/h plaatje
+Full file path|Volledige pad v/h plaatje
+Image overlay text|Tekst bij plaatje
+off|geen
+top|top
+bottom|bodem
+left|links
+center|in het midden
+right|rechts
+
+Thumbnail icons|Iconen
+Maximum icon size:|Maximale grootte:
+Icon spacing:|Tussenruimte:
+Automatically create cache|Automatische cache creatie
+Compress cache files|Comprimeer cache
+Icon size stored in cache overrides selected icon size|Negeer opgegeven grootte bij al eerder opgeslagen grootte
+Close index window when opening an image|Sluit indexvenster als een plaatje geopend wordt
+Translucent background|Doorzichtige achtergrond
+Auto-background color|Automatische achtergrondkleur
+Window background color|Achtergrondkleur venster
+Title bar text|Titelbalk tekst
+Show full directory path|Toon volledige pad
+Show number of images|Toon het aantal plaatjes
+
+Misc|Algemeen
+Interface language:|Taal:
+Recent directories and last file memory|Recente lades en laatste bestand geheugen
+Clear on program exit|Opschonen bij afsluiten programma
+Clear now|Schoon nu op
+File type associations:|Bestandstype associaties:
+Edit associations...|Bestanden bewerken...
+
+Image|Plaatje
+Image file information|Plaatjesinfo
+File name|Bestandsnaam
+File path|Bestandspad
+Dimensions|Dimensies
+Color format|Kleurindeling
+Compression|Compressie
+File format|Bestandsindeling
+File time|Bestandsdatum
+File size|Bestandsgrootte
+Name/title|Naam/Titel
+Comment|Commentaar
+Author|Auteur
+Copyright|Copyright
+Date created|Gemaaktdatum
+Page|Pagina
+Source/device|Bron/apparaat
+Pixel density|Pixeldichtheid
+Orientation|Richtlijn
+GPS geotag|GPS geotag
+Keyword|Trefwoord
+
+About|Over...
+Author:|Auteur:
+Visit our WWW site for updates and more great apps!|Bezoek onze website voor updates en andere programma's!
+Please make a donation if you enjoy using this program!|Als dit programma u bevalt: een donatie wordt zeer op prijs gesteld!
+
+
+//
+// Image adjustment dialog
+//
+
+Image adjustment|Bewerk eigenschappen
+Contrast:|Contrast:
+Brightness:|Helderheid:
+Sharpness:|Scherpte:
+Hue:|Tint:
+Saturation:|Saturatie:
+Gamma:|Gamma:
+Luminance:|Luminescentie:
+Red-bias:|Rood filteren:
+Green-bias:|Groen filteren:
+Blue-bias:|Blauw filteren:
+Invert colors|Negatief
+Rotate image:|Roteer plaatje:
+Reset|Herstellen
+Save|Bewaren
+Cancel|Afbreken
+OK|Klaar
+
+
+//
+// Create slide show script dialog
+//
+
+Create slideshow script|Creëer diashow script
+File name:|Naam:
+Image progression|Plaatjesvoortgang
+No delay between images|Geen pauze tussen plaatjes
+Wait for keypress or mouseclick|Wacht op toets of muisklik
+Delay|Wacht
+seconds between images|seconden tussen plaatjes
+Sort files alphabetically|Soort bestanden alfabetisch
+Write full file paths|Gebruik volledige bestandspad
+Loop slideshow continuously|Diashow continu herhalen
+Edit in Notepad before executing|Bewerk in kladblok voor de uitvoering
+Delete script file when finished|Verwijder het script na de uitvoering
+Create!|Maak!
+Cancel|Afbreken
+Note:   You can at any time press 'pause' to pause the slide show, or 'escape' to quit it.|NB: U kunt ten alle tijden op 'pause' drukken om de diashow te pauzeren, of 'escape' om het te stoppen.
+
+
+//
+// File rename dialog
+//
+
+Rename image file|Wijzig naam plaatje
+Old name:|Oude naam:
+New name:|Nieuwe naam:
+Rename!|Wijzig!
+
+
+//
+// Messages and misc stuff
+//
+
+Attention!|Pas op!
+Do you really want to delete this?|Wilt u dit bestand echt wissen?
+Couldn't create script file!|Kon het diashowscript niet maken!
+File operation failed!|Operatie mislukt!
+
+// Install options
+Associate supported file types with Image Eye.|Open ondersteunde bestandsindelingen met Image Eye.
+Continue >|Ga verder >

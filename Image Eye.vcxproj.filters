@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="UI">
+      <UniqueIdentifier>{97d0e7b9-4abb-4353-85ce-9b5b813e19d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{c86e5119-9a70-4cf4-a81e-fce87a83e0e6}</UniqueIdentifier>
+      <Extensions>*.rc;*.ico;*.cur;*.bmp</Extensions>
+    </Filter>
+    <Filter Include="ieC++ Core">
+      <UniqueIdentifier>{080514eb-573d-418e-a966-a74fd29365bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ieC++ Formats">
+      <UniqueIdentifier>{4a66353e-ebec-466b-93a0-2818cdbb0c41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ieC++ Formats\JPEG">
+      <UniqueIdentifier>{c518b25f-909b-4f66-8333-f20a816a007a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ieC++ Formats\Zlib">
+      <UniqueIdentifier>{2858b239-6a0a-4181-b5cf-45f0f0b0c9c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ieC++ Extras">
+      <UniqueIdentifier>{f1d58009-c8ad-4d1e-aa73-ac4c2daaec96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="md System">
+      <UniqueIdentifier>{e98ebafe-53c4-4081-890c-6d25fb2e36d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Clipboard.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Config.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\FileIcon.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Index.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Main.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\SlideShow.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Viewer.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_bmp.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_dds.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_exif.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_faxg3g4.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_fits.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_gif.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_ico.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_iptc.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_jpeg.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_pcx.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_png.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_psd.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_tga.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_xmp.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\md\muiButtons.cpp">
+      <Filter>md System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\md\muiLists.cpp">
+      <Filter>md System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\md\muiMain.cpp">
+      <Filter>md System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\md\muiResources.cpp">
+      <Filter>md System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\md\muiWindow.cpp">
+      <Filter>md System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\FileIconDraw.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\FileIconCache.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\FileIconCollection.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieColorX2BGRA.cpp">
+      <Filter>ieC++ Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieColorPack.cpp">
+      <Filter>ieC++ Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieColorSpace.cpp">
+      <Filter>ieC++ Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_tiff.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieC++.cpp">
+      <Filter>ieC++ Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieTextInfo.cpp">
+      <Filter>ieC++ Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieImage.cpp">
+      <Filter>ieC++ Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieColorX2CLUT.cpp">
+      <Filter>ieC++ Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieColorX2L.cpp">
+      <Filter>ieC++ Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieDitherCLUT.cpp">
+      <Filter>ieC++ Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieDither5bit.cpp">
+      <Filter>ieC++ Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieDitherWide.cpp">
+      <Filter>ieC++ Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_hdr.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_iff.cpp">
+      <Filter>ieC++ Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieRotate.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieSharpen.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieTrim.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\iePreview.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieAlpha.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieResample.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieResampleDownPow2.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieResampleKernel4.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieDisplay.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieColorAdjust.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieFill.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Translator.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_jpeg_Marker.cpp">
+      <Filter>ieC++ Formats\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_jpeg_IDCT.cpp">
+      <Filter>ieC++ Formats\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_jpeg_Huffman.cpp">
+      <Filter>ieC++ Formats\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_jpeg_Arithmetic.cpp">
+      <Filter>ieC++ Formats\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_jpeg_Upsample.cpp">
+      <Filter>ieC++ Formats\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\EyeScriptParser.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\Fmt\ief_jpeg_Internals.cpp">
+      <Filter>ieC++ Formats\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieTextConv.cpp">
+      <Filter>ieC++ Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\md\mdFileDlg.cpp">
+      <Filter>md System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\md\mdRecentList.cpp">
+      <Filter>md System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\md\mdRegStore.cpp">
+      <Filter>md System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\md\mdSystem.cpp">
+      <Filter>md System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\md\mdTimer.cpp">
+      <Filter>md System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\adler32.c">
+      <Filter>ieC++ Formats\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\crc32.c">
+      <Filter>ieC++ Formats\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\inffast.c">
+      <Filter>ieC++ Formats\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\inftrees.c">
+      <Filter>ieC++ Formats\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\zutil.c">
+      <Filter>ieC++ Formats\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\inflate.c">
+      <Filter>ieC++ Formats\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ImageAdjustment.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Options.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieDirectoryCache.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieFileFormats.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ieC++\Src\ieFileManager.cpp">
+      <Filter>ieC++ Extras</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Config.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\FileIcon.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Res\resource.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\ieC++.h">
+      <Filter>ieC++ Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\md\muiButtons.h">
+      <Filter>md System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\md\muiLists.h">
+      <Filter>md System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\md\muiMain.h">
+      <Filter>md System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\md\muiResources.h">
+      <Filter>md System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\md\muiWindow.h">
+      <Filter>md System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\ieColor.h">
+      <Filter>ieC++ Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\ieErrors.h">
+      <Filter>ieC++ Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\iePlatform.h">
+      <Filter>ieC++ Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\ieTextInfo.h">
+      <Filter>ieC++ Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\ieImage.h">
+      <Filter>ieC++ Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\iePreview.h">
+      <Filter>ieC++ Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\ieResampleKernel4Coeffs.h">
+      <Filter>ieC++ Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\ieDisplay.h">
+      <Filter>ieC++ Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\ieExtras.h">
+      <Filter>ieC++ Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Translator.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\EyeScriptParser.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\Fmt\ief_jpeg_Decoder.h">
+      <Filter>ieC++ Formats\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\Fmt\ief_jpeg_Internals.h">
+      <Filter>ieC++ Formats\JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\ieTextConv.h">
+      <Filter>ieC++ Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\md\mdArrayList.h">
+      <Filter>md System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\md\mdFileDlg.h">
+      <Filter>md System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\md\mdRecentList.h">
+      <Filter>md System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\md\mdRegStore.h">
+      <Filter>md System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\md\mdSystem.h">
+      <Filter>md System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\md\mdTimer.h">
+      <Filter>md System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\crc32.h">
+      <Filter>ieC++ Formats\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\inffast.h">
+      <Filter>ieC++ Formats\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\inftrees.h">
+      <Filter>ieC++ Formats\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\zconf.h">
+      <Filter>ieC++ Formats\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\zlib.h">
+      <Filter>ieC++ Formats\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\zutil.h">
+      <Filter>ieC++ Formats\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\inflate.h">
+      <Filter>ieC++ Formats\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ImageEye.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\ieDirectoryCache.h">
+      <Filter>ieC++ Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\ieFileFormats.h">
+      <Filter>ieC++ Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ieC++\Src\ieFileManager.h">
+      <Filter>ieC++ Extras</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\bluemax.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\bluemin.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\brightnessmax.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\brightnessmin.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\checkbtn.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\checkmark.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\closeall.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\clr.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\clrico.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\contrastmax.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\contrastmin.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\delete.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\exit.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\fullscreen.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\gammamax.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\gammamin.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\greenmax.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\greenmin.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\help.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\huemax.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\huemin.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\ieye.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\ieyef.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\ieyesm.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\iindex.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\imageeeye.png">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="imageeeye.png">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\index.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\logo.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="logo.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\logo1.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\logo2.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\logo2ico.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\logobmp.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\luminancemax.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\luminancemin.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\new.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\next.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\open.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\options.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\optionsi.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\prev.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\print.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\redmax.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\redmin.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\reload.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\restore.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\rotleft.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\rotright.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\saturationmax.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\saturationmin.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\save.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\sharpnessmax.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\sharpnessmin.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\size2img.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\size2win.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\slide.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="test.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\windowed.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\xscrollc.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\xyscroll.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\yscrollc.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\zoomin.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\zoomout.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\folder_closed.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Res\folder_open.ico">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Res\ieye.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="To-do.txt" />
+    <Text Include="gpl.txt" />
+    <Text Include="Translations.txt" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

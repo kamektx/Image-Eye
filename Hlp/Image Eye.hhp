@@ -1,0 +1,33 @@
+[OPTIONS]
+Auto Index=Yes
+Binary TOC=Yes
+Compatibility=1.1 or later
+Compiled file=..\Out\Image Eye.chm
+Contents file=Table of Contents.hhc
+Default Window=ieye
+Default topic=html\welcome.htm
+Display compile notes=No
+Display compile progress=Yes
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=Manual - Image Eye
+
+[WINDOWS]
+ieye="Manual - Image Eye","Table of Contents.hhc","Index.hhk","html\welcome.htm","html\welcome.htm",,,,,0x40120,,0x60380e,[100,100,900,700],0x30000,,,,,,0
+
+
+[FILES]
+html\termsofuse.htm
+html\welcome.htm
+html\fileformats.htm
+html\viewer.htm
+html\index.htm
+html\commandline.htm
+html\slideshow.htm
+html\faq.htm
+html\revision.htm
+
+[TEXT POPUPS]
+
+[INFOTYPES]
+

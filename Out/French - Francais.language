@@ -1,0 +1,271 @@
+///////////////////////////////////////////////////////////////////////////
+// French translation of Image Eye - by Louis Chevallier                 //
+// ... and updated to v7.1 by Francisco Javier Arrillaga                 //
+///////////////////////////////////////////////////////////////////////////
+
+
+//
+// Viewer context menu
+//
+
+File|Fichier
+View|Voir
+Slideshow|Diaporama
+Index|Indexer
+Options|Options
+Restore window|Restaurer la fenêtre
+Close|Fermer
+Help|Aide
+
+// View->
+Fullscreen mode|Mode plein écran
+Topmost window|Fenêtre devant
+Freeze window|Geler la fenêtre
+Size window to image|Mettre la fenêtre à l'échelle de l'image
+Size image to window|Mettre l'image à l'échelle de la fenêtre
+Trim image to window|Ajuster l'image à la fenêtre
+Restore original size|Remettre à la taille originale
+Adjust image...|Adjuster l'image...
+Rotate image -90°|Rotation à -90°
+Rotate image +90°|Rotation à +90°
+Rotate image 180°|Rotation à 180°
+Mirror image vertically|Miroir vertical
+Mirror image horizontally|Miroir horizontal
+Zoom in|Zoom
+Zoom out|Panoramique
+Zoom to factor|Facteur de zoom
+Zoom to 10% size|Zoom à 10% de la taille
+Zoom to 25% size|Zoom à 25% de la taille
+Zoom to 50% size|Zoom à 50% de la taille
+Zoom to 75% size|Zoom à 75% de la taille
+Zoom to 100% size|Zoom à 100% de la taille
+Zoom to 150% size|Zoom à 150% de la taille
+Zoom to 200% size|Zoom à 200% de la taille
+Zoom to 300% size|Zoom à 300% de la taille
+Zoom to 400% size|Zoom à 400% de la taille
+Use as desktop wallpaper|Appliquer comme fond d'écran
+Send window to back|Envoyer la fenêtre derriere
+
+// File->
+Load new...|Ouvrir un nouvelle image...
+Next image file|Image suivante
+Previous image file|Image précédente
+First image file in directory|Premier image en répertoire
+Last image file in directory|Dernier image en répertoire
+Close all image windows|Fermer toutes les fenêtres images
+Spawn new...|Nouvelle fenêtre...
+Spawn next image|Image suivante en nouvelle
+Spawn previous image|Image précédente en nouvelle
+Image file information...|Information sur le fichier image...
+Save as...|Enregistrer sous...
+Reload from file|Recharger depuis le fichier
+Copy file...|Copier le fichier...
+Move file...|Déplacer le fichier...
+Rename file...|Renommer le fichier...
+Delete file...|Supprimer un fichier...
+Erase file...|Effacer le fichier...
+Delete this & show next...|Supprimer et montrer le suivant...
+Erase this & show next...|Effacer le fichier et montrer le suivant...
+Copy to clipboard|Copier dans le presse-papier
+Paste from clipboard|Coller depuis le presse-papier
+Capture a screen shot|Faire une copie d'écran
+Capture a window shot|Faire une capture de fenêtre
+
+// Slideshow->
+Create slideshow script|Créer diaporama...
+Run in fullscreen mode|Ouvrir en mode plein écran
+
+
+//
+// Index context menu (only the items not also on the viewer context menu)
+//
+
+View image|Voir l'image
+View index|Voir l'index
+View slideshow|Voir le diaporama
+Edit slideshow|Editer le diaporama
+Open|Ouvrir
+Recurse sub-directories|Parcourt des sous-répertoires
+Sort icons|Trier les icônes
+Icon cache|Cache Icône
+
+// File->
+Save index as bitmap...|Enregistrer les icônes dans une image
+
+// View->
+Directories|Répertoires
+Non-image files|Fichiers non images
+Names (1 line)|Noms (1 ligne)
+Names (2 lines)|Noms (2 lignes)
+Names (3 lines)|Noms (3 lignes)
+Names (4 lines)|Noms (4 lignes)
+Resolutions|Résolutions
+File extensions|Extensions fichiers
+File dates|Date des fichiers
+File sizes|Taille des fichiers
+
+// Sort->
+By name|Par nom
+By full path|Par chemin complet
+By image size|Par taille d'image
+By file size|Par taille de fichier
+By file date|Par date de fichier
+
+// Cache->
+Recreate|Recréer
+Save cache|Enregistrer le cache
+Update cache|Mettre à jour le cache
+Remove cache|Vider le cache
+
+
+//
+// Extensions to the standard File open dialog
+//
+
+Recent:|Récent:
+All files|Tous les fichiers
+View|Voir
+Open image file|Ouvrir le fichier image
+Save image as|Enregistrer l'image sous
+Select destination folder...|Selectionner le répertoire destination...
+Supported file types|Types de fichiers supporté
+
+
+//
+// Options dialog
+//
+
+Viewer|Visionneuse
+Viewer behavior|Comportement du viewer
+Show title bar only when mouse hovers over image|Titre apparent quand la souris est sur l'image
+Open in full screen mode|Ouvrir en mode plein écran
+Hide the progress display|Etat d'avancement invisible
+Auto-size image to window|Mise à l'échelle de l'image
+Only shrink|Seulement rétrécir
+Auto-shrink when too large in full screen mode|Rétrécissement de l'image en mode automatique
+Title bar text|Texte de la barre titre
+Image resolution|Résolution Image
+Full file path|Chemin du fichier complet
+Image overlay text|Texte de l'image
+off|Désactiver
+top|Dessus
+bottom|Dessous
+left|Gauche
+center|Centre
+right|Droite
+
+Thumbnail icons|Icones
+Maximum icon size:|Taille maxi des icones:
+Icon spacing:|Espacement des icones:
+Automatically create cache|Créer automatiquement cache
+Compress cache files|Compresser fichiers cachés
+Icon size stored in cache overrides selected icon size|Taille des icones cachés substitue taille de l'icone sélectionnée
+Close index window when opening an image|Fenêtre d'index étroite en ouvrant une image
+Translucent background|Fond transparent
+Auto-background color|Couleur de fond automatique
+Window background color|Couleur de fond
+Title bar text|Texte de la barre de titre
+Show full directory path|Nom complet du répertoire
+Show number of images|Montrer le nombre d'images
+
+Misc|Autre
+Interface language:|Langage d'interfaces:
+Recent directories and last file memory|Répertoires récents et derniers fichiers en mémoire
+Clear on program exit|Effacer en quittant
+Clear now|Effacer maintenant
+File type associations:|Type de fichiers associés:
+Edit associations...|Modifier les associations...
+
+Image|Image
+Image file information|Infomation sur le fichier image
+File name|Nom de fichier
+File path|Chemin du fichier
+Dimensions|Dimmensions
+Color format|Format couleur
+Compression|Compression
+File format|Format de fichier
+File time|Date fichier
+File size|Taille de fichier
+Name/title|Nom/Titre
+Comment|Commentaire
+Author|Auteur
+Copyright|Copyright
+Date created|Date créé
+Page|Page
+Source/device|Source/appareil
+Pixel density|Densité Pixel
+Orientation|Orientation
+GPS geotag|GPS géomarque
+Keyword|Mots-clés
+
+About|A propos...
+Author:|Auteur:
+Visit our WWW site for updates and more great apps!|Visitez notre site pour des mises à jour et d'autres applications!
+Please make a donation if you enjoy using this program!|S'il vous plaît faire un don si vous appréciez ce programme!
+
+
+//
+// Image adjustment dialog
+//
+
+Image adjustment|Adjuster l'image
+Contrast:|Contraste:
+Brightness:|Lumière:
+Sharpness:|Contours:
+Hue:|Teinte:
+Saturation:|Saturation:
+Gamma:|Gamma:
+Luminance:|Luminance:
+Red-bias:|Rouge:
+Green-bias:|Vert:
+Blue-bias:|Bleu:
+Invert colors|Inverser
+Rotate image:|Rotation:
+Reset|Remise à zéro
+Save|Enregistrer
+Cancel|Annuler
+OK|OK
+
+
+//
+// Create slide show script dialog
+//
+
+Create slideshow script|Créer un script de diaporama
+File name:|Nom de fichier:
+Image progression|Progression de l'image
+No delay between images|Pas d'attente entre les images
+Wait for keypress or mouseclick|Attendre une touche ou un click
+Delay|Délai
+seconds between images|secondes entre les images
+Sort files alphabetically|Trier les fichiers par ordre alphabétique
+Write full file paths|Ecrire les chemins complets
+Loop slideshow continuously|Boucle sur les diaporamas
+Edit in Notepad before executing|Editer dans Notepad avant d'exécuter
+Delete script file when finished|Supprimer le script après la fin
+Create!|Créer!
+Note:   You can at any time press 'pause' to pause the slide show, or 'escape' to quit it.| Note: Vous pouvez ???????? 'Pause' pour pauser le diaporama, ou 'échap' pour finir.
+
+
+//
+// File rename dialog
+//
+
+Rename image file|Renommer le fichier
+Old name:|Nom présédent:
+New name:|Nouveau nom:
+Rename!|Renommer!
+
+
+//
+// Messages and misc stuff
+//
+
+Attention!|Attention!
+Do you really want to delete this?|Voulez-vous réellement supprimer le fichier?
+Couldn't create script file!|Impossible de créer le fichier script!
+File operation failed!|Echec de l'opération sur le fichier!
+s
+// Install options
+Associate supported file types with Image Eye.|Associer avec Image Eye les types de fichier utilisés.
+Continue >|Continue >

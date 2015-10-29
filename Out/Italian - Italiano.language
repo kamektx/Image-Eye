@@ -1,0 +1,274 @@
+//////////////////////////////////////////////////////////////////////////////
+// Italian translation of Image Eye - by Pietro Cecchi, on may 18 2005      //
+//                                  -    http://mon-petit-monde.ifrance.com //
+//                                  -    http://cecchi.infinito.it          //
+//                                  -    pietrocecchi@inwind.it             //
+//////////////////////////////////////////////////////////////////////////////
+
+
+//
+// Viewer context menu
+//
+
+File|File
+View|Visualizzazione
+Slideshow|Sequenza di immagini
+Index|Indice
+Options|Opzioni di istallazione
+Restore window|Ripristina la finestra
+Close|Chiudere
+Help|Aiuto
+
+// View->
+Fullscreen mode|Commuta il modo a pieno schermo
+Topmost window|Finestra sempre in primo piano
+Freeze window|Congela la finestra
+Size window to image|Dimensiona la finestra all'immagine
+Size image to window|Dimensiona l'immagine alla finestra
+Trim image to window|Ritaglia l'immagine alle dimensioni della finestra
+Restore original size|Ripristina le dimensioni originali
+Adjust image...|Aggiusta l'immagine...
+Rotate image +90°|Ruota l'immagine a 90°
+Rotate image 180°|Ruota l'immagine a 180°
+Rotate image -90°|Ruota l'immagine a -90°
+Mirror image vertically|Specchia in verticale
+Mirror image horizontally|Specchia in orizzontale
+Zoom in|Zuma in avvicinamento
+Zoom out|Zuma in allontanamento
+Zoom to factor|Zuma al fattore
+Zoom to 10% size|Zuma al 10%
+Zoom to 25% size|Zuma al 25%
+Zoom to 50% size|Zuma al 50%
+Zoom to 75% size|Zuma al 75%
+Zoom to 100% size|Zuma al 100%
+Zoom to 150% size|Zuma al 150%
+Zoom to 200% size|Zuma al 200%
+Zoom to 300% size|Zuma al 300%
+Zoom to 400% size|Zuma al 400%
+Use as desktop wallpaper|Usa come immagine di desktop
+Send window to back|Sposta la finestra in secondo piano
+
+// File->
+Load new...|Carica una nuova immagine...
+Next image file|Immagine successiva
+Previous image file|Immagine precedente
+First image file in directory|Prima immagine
+Last image file in directory|Ultima immagine
+Close all image windows|Chiudi tutte le finestre d'immagine
+Spawn new...|Aggiungi una nuova immagine...
+Spawn next image|Apri l'immagine successiva
+Spawn previous image|Apri l'immagine precedente
+Image file information...|Informazioni sul file immagine...
+Save as...|Salva come...
+Reload from file|Ricarica dal file
+Copy file...|Copia il file...
+Move file...|Sposta il file...
+Rename file...|Rinomina il file...
+Delete file...|Rimuovi il file...
+Erase file...|Rimuovi il file (sovrascrivendolo)...
+Delete this & show next...|Rimuovi questo file e mostra il successivo...
+Erase this & show next...|Rimuovi (sovrascrivendolo) questo file e mostra il successivo...
+Copy to clipboard|Copia nella clipboard
+Paste from clipboard|Incolla dalla clipboard
+Capture a screen shot|Fai un'istantanea dello schermo
+Capture a window shot|Fai un'istantanea della finestra
+
+// Slideshow->
+Create slideshow script|Crea lo script della sequenza delle immagini
+Run in fullscreen mode|Lancia il modo a pieno schermo
+
+
+//
+// Index context menu (only the items not also on the viewer context menu)
+//
+
+View image|Vedi l'immagine
+View index|Vedi l'indice
+View slideshow|Visiona le immagini in sequenza
+Edit slideshow|Edita la sequenza delle immagini
+Open|Apri
+Recurse sub-directories|Ricerca ricorsivamente nelle sotto-directory
+Sort icons|Ordina le icone
+Icon cache|Cache delle icone
+
+// File->
+Save index as bitmap...|Salva l'indice come bitmap...
+
+// View->
+Directories|Directory
+Non-image files|File non-immagine
+Names (1 line)|Nomi su 1 linea
+Names (2 lines)|Nomi su 2 linee
+Names (3 lines)|Nomi su 3 linee
+Names (4 lines)|Nomi su 4 linee
+Resolutions|Risoluzioni
+File extensions|Estensioni dei file
+File dates|Date dei file
+File sizes|Dimensioni dei file
+
+// Sort->
+By name|In base al nome
+By full path|In base al percorso intero della directory
+By image size|In base alla dimensione dell'immagine
+By file size|In base alla dimensione del file
+By file date|In base alla data del file
+
+// Cache->
+Recreate|Ricrea
+Save cache|Salva la cache
+Update cache|Aggiorna la cache
+Remove cache|Rimuovi la cache
+
+
+//
+// Extensions to the standard File open dialog
+//
+
+Recent:|Recenti:
+All files|Tutti i file
+View|Visualizzazione
+Open image file|Apri un file immagine
+Save image as|Salva l'immagine come
+Select destination folder...|Scegli la cartella di destinazione...
+Supported file types|Tutti i file immagine supportati
+
+
+//
+// Options dialog
+//
+
+Viewer|Visualizzatore
+Viewer behavior|Funzionamento del visualizzatore d'immagini
+Show title bar only when mouse hovers over image|Mostra il titolo solo al passaggio del mouse
+Open in full screen mode|Apri nel modo a pieno schermo
+Hide the progress display|Nascondi avanzamento
+Auto-size image to window|Dimensiona l'immagine alla finestra
+Only shrink|soltanto per restringerla
+Auto-shrink when too large in full screen mode|Restringi se troppo grande, modo a pieno schermo
+Title bar text|Testo della barra del titolo
+Image resolution|Risoluzione dell'immagine
+Full file path|Percorso intero del file
+Image overlay text|Testo sovrapposto all'immagine
+off|nessuno
+top|cima
+bottom|fondo
+left|sinistra
+center|centro
+right|destra
+
+Thumbnail icons|Icone di anteprima
+Maximum icon size:|Dimens. max d'icona:
+Icon spacing:|Spaziatura delle icone:
+Automatically create cache|Auto-crea la cache
+Compress cache files|Comprimi i file della cache
+Icon size stored in cache overrides selected icon size|Dimensione icone nella cache prevale la dimensione selezionate
+Close index window when opening an image|Chiudi la finestra dell'indice quando si apre un'immagine
+Translucent background|Sfondo traslucido
+Auto-background color|Colore di fondo automatica
+Window background color|Colore di fondo della finestra
+Title bar text|Testo della barra del titolo
+Show full directory path|Percorso intero directory
+Show number of images|Numero dei file immagine
+
+Misc|Miscellanea
+Interface language:|Scegli la lingua:
+Recent directories and last file memory|Directory e file visitati di recente
+Clear on program exit|Svuota quando il programma termina
+Clear now|Svuota adesso
+File type associations:|Associazioni del tipo di file:
+Edit associations...|Modifica le associazioni...
+
+Image|Informazioni
+Image file information|Informazioni sul file immagine
+File name|Nome
+File path|Percorso
+Dimensions|Dimensioni
+Color format|Formato colori
+Compression|Compressione
+File format|Formato file
+File time|Data file
+File size|Dimensione file
+Name/title|Nome/titolo
+Comment|Commento
+Author|Autore
+Copyright|Copyright
+Date created|Creazione
+Page|Pagina
+Source/device|Sorgente/dispositivo
+Pixel density|Densità in pixel
+Orientation|Orientamento
+GPS geotag|Coordinate GPS
+Keyword|Parola chiave
+
+About|A proposito...
+Author:|Autore:
+Visit our WWW site for updates and more great apps!|Visita il nostro sito per aggiornamenti ed altre interessanti applicazioni!
+Please make a donation if you enjoy using this program!|Fai una donazione, prego, se ti piace usare questo programma!
+
+
+//
+// Image adjustment dialog
+//
+
+Image adjustment|Aggiusta l'immagine
+Contrast:|Contrasto:
+Brightness:|Luminosità:
+Sharpness:|Definizione:
+Hue:|Tono di colore:
+Saturation:|Saturazione:
+Gamma:|Gamma:
+Luminance:|Luminanza:
+Red-bias:|Livello del rosso:
+Green-bias:|Livello del verde:
+Blue-bias:|Livello del blu:
+Invert colors|Inverti
+Rotate image:|Ruota l'immagine:
+Reset|Ripristina
+Save|Salva
+Cancel|Annulla
+OK|OK
+
+
+//
+// Create slide show script dialog
+//
+
+Create slideshow script|Crea lo script per la sequenza delle immagini
+File name:|Nome del file:
+Image progression|Avanzamento dell'immagine
+No delay between images|Nessun ritardo tra le immagini
+Wait for keypress or mouseclick|Attendi la pressione di un tasto o un click
+Delay|Ritardo
+seconds between images|secondi tra le immagini
+Sort files alphabetically|Ordinare i file in ordine alfabetico
+Write full file paths|Scrivi i percorsi di file completi
+Loop slideshow continuously|Immagini in sequenza continua
+Edit in Notepad before executing|Edita con Notepad prima di eseguire
+Delete script file when finished|Rimuovi lo script quando finito
+Create!|Crea!
+Cancel|Annulla
+Note:   You can at any time press 'pause' to pause the slide show, or 'escape' to quit it.|Nota:   In ogni momento, durante la sequenza delle immagini, puoi premere 'pause' per fermare la sequenza, oppure 'escape' per uscirne.
+
+
+//
+// File rename dialog
+//
+
+Rename image file|Rinomina il file immagine
+Old name:|Vecchio nome:
+New name:|Nuovo nome:
+Rename!|Rinomina!
+
+
+//
+// Messages and misc stuff
+//
+
+Attention!|Attenzione!
+Do you really want to delete this?|Vuoi davvero rimuovere il file?
+Couldn't create script file!|Non ho potuto creare il file script!
+File operation failed!|Operazione di file fallita!
+
+// Install options
+Associate supported file types with Image Eye.|Associa ad Image Eye i tipi di file supportati.
+Continue >|Continua >

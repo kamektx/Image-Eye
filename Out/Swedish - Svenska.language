@@ -1,0 +1,268 @@
+///////////////////////////////////////////////////////////////////////////
+// Swedish translation of Image Eye - by Markus Dimdal, fmj@fmjsoft.com //
+///////////////////////////////////////////////////////////////////////////
+
+
+//
+// Viewer context menu
+//
+
+File|Arkiv
+View|Visa
+Slideshow|Bildspel
+Index|Index
+Options|Inställningar
+Restore window|Återställ fönstret
+Close|Stäng
+Help|Hjälp
+
+// View->
+Fullscreen mode|Toggla till/från fullskärmsläge
+Topmost window|Alltid överst
+Freeze window|Frys fönstret
+Size window to image|Anpassa fönster till bild
+Size image to window|Anpassa bild till fönster
+Trim image to window|Beskär bilden efter fönstret
+Restore original size|Återställ ursprunglig storlek
+Adjust image...|Bildinställningar...
+Rotate image -90°|Rotera bilden -90°
+Rotate image +90°|Rotera bilden +90°
+Rotate image 180°|Rotera bilden 180°
+Mirror image vertically|Spegla bilden vertikalt
+Mirror image horizontally|Spegla bilden horisontelt
+Zoom in|Zooma in
+Zoom out|Zooma ut
+Zoom to factor|Zooma
+Zoom to 10% size|Zooma till 10% storlek
+Zoom to 25% size|Zooma till 25% storlek
+Zoom to 50% size|Zooma till 50% storlek
+Zoom to 75% size|Zooma till 75% storlek
+Zoom to 100% size|Zooma till 100% storlek
+Zoom to 150% size|Zooma till 150% storlek
+Zoom to 200% size|Zooma till 200% storlek
+Zoom to 300% size|Zooma till 300% storlek
+Zoom to 400% size|Zooma till 400% storlek
+Use as desktop wallpaper|Använd som skrivbordsunderlägg
+Send window to back|Lägg fönstret längst bak
+
+// File->
+Load new...|Öppna ny bildfil...
+Next image file|Nästa bildfil
+Previous image file|Föregående bildfil
+First image file in directory|Första bildfilen i katalogen
+Last image file in directory|Sista bildfilen i katalogen
+Close all image windows|Stäng samtliga bildfönster
+Spawn new...|Ny bildvisare...
+Spawn next image|Nästa bildfil i ny
+Spawn previous image|Föregående bildfil i ny
+Image file information...|Bildfilsinformation...
+Save as...|Spara som...
+Reload from file|Ladda om från filen igen
+Copy file...|Kopiera fil...
+Move file...|Flytta fil...
+Rename file...|Döp om fil...
+Delete file...|Radera fil...
+Erase file...|Radera fil med överskrivning
+Delete this & show next...|Radera fil & visa nästa...
+Erase this & show next...|Radera fil med överskrivning, visa nästa...
+Copy to clipboard|Kopiera till klippbordet
+Paste from clipboard|Klistra in från klippbordet
+Capture a screen shot|Kopiera skärmendump till en bild
+Capture a window shot|Kopiera ett fönster till en bild
+
+// Slideshow->
+Create slideshow script|Skapa bildspel...
+Run in fullscreen mode|Kör i fullskärmsläge
+
+
+//
+// Index context menu (only the items not also on the viewer context menu)
+//
+
+View image|Visa bilden
+View index|Visa index
+View slideshow|Visa bildspel
+Edit slideshow|Editera bildspelet
+Open|Öppna
+Recurse sub-directories|Sök igenom alla underkataloger
+Sort icons|Sortera ikoner
+Icon cache|Ikoncache
+
+// File->
+Save index as bitmap...|Spara index som en bitmap...
+
+// View->
+Directories|Kataloger
+Non-image files|Icke-bildfiler
+Names (1 line)|Namn (1 rad)
+Names (2 lines)|Namn (2 rader)
+Names (3 lines)|Namn (3 rader)
+Names (4 lines)|Namn (4 rader)
+Resolutions|Upplösning
+File extensions|Filändelser
+File dates|Fildatum
+File sizes|Filstorlekar
+
+// Sort->
+By name|Efter namn
+By full path|Efter katalog och namn
+By image size|Efter bildstorlek
+By file size|Efter filstorlek
+By file date|Efter fildatum
+
+// Cache->
+Recreate|Återskapa
+Save cache|Spara chache
+Update cache|Updatera cache
+Remove cache|Ta bort cache
+
+//
+// Extensions to the standard File open dialog
+//
+Recent:|Tidigare:
+All files|Alla filer
+View|Visa
+Open image file|Öppna bildfil
+Save image as|Spara bilden som
+Select destination folder...|Välj utkatalog...
+Supported file types|Alla hanterade filtyper
+
+
+//
+// Options dialog
+//
+Viewer|Bildvisning
+Viewer behavior|Allmänna inställningar
+Show title bar only when mouse hovers over image|Visa titelrad enbart då musepekaren förs över bilden
+Open in full screen mode|Öppna bilder i maximerat läge
+Hide the progress display|Dölj statusrapporteringsfönstret
+Auto-size image to window|Skala automatiskt bilden efter fönstret
+Only shrink|Enbart förminska
+Auto-shrink when too large in full screen mode|Minska automatiskt för stora bilder i fullskärmsläge
+Title bar text|Titelradstext
+Image resolution|Bildupplösning
+Full file path|Bildens fulla sökväg
+Image overlay text|Bildtext
+off|av
+top|överst
+bottom|nederst
+left|vänster
+center|mitten
+right|höger
+
+Thumbnail icons|Ikoner
+Maximum icon size:|Maximal ikonstorlek:
+Icon spacing:|Mellanrum:
+Automatically create cache|Skapa automatiskt cachefil
+Compress cache files|Komprimera cachefiler
+Icon size stored in cache overrides selected icon size|Använd cachade ikoners storlek istället för vald ikonstorlek
+Close index window when opening an image|Stäng indexfönstret när du öppnar en bild
+Translucent background|Genomskinligt fönster
+Auto-background color|Automatisk bakgrundsfärg
+Window background color|Bakgrundsfärg för fönstret
+Title bar text|Titelradstext
+Show full directory path|Visa hela katalogsökträdet
+Show number of images|Visa antal bildfiler
+
+Misc|Diverse
+Interface language:|Språkinställning:
+Recent directories and last file memory|Listan 'Tidigare' kataloger samt senaste bildfil
+Clear on program exit|Rensa dessa då programmet avslutas
+Clear now|Rensa nu
+File type associations:|Associerade filtyper:
+Edit associations...|Ändra filassociationer...
+
+Image|Bildinfo
+Image file information|Bildfilsinformation
+File name|Filnamn
+File path|Filkatalog
+Dimensions|Dimensioner
+Color format|Färgformat
+Compression|Komprimering
+File format|Filformat
+File time|Fildatum
+File size|Filstorlek
+Name/title|Namn/titel
+Comment|Bildkommentar
+Author|Skapad av
+Copyright|Copyright
+Date created|Skapelsedatum
+Page|Sida
+Source/device|Källa
+Pixel density|Punkttäthet
+Orientation|Orientering
+GPS geotag|GPS geotagg
+Keyword|Nyckelord
+
+About|Om programmet
+Author:|Skrivet av:
+Visit our WWW site for updates and more great apps!|Besök vår web-site för uppdateringar och annat kul!
+Please make a donation if you enjoy using this program!|Snälla skänk en slant om du gillar programmet!
+
+
+//
+// Image adjustment dialog
+//
+
+Image adjustment|Bildinställningar
+Contrast:|Kontrast:
+Brightness:|Ljusstyrka:
+Sharpness:|Skärpa:
+Hue:|Färgton:
+Saturation:|Färgmättnad:
+Gamma:|Gamma:
+Luminance:|Luminans:
+Red-bias:|Röd-nivå:
+Green-bias:|Grön-nivå:
+Blue-bias:|Blå-nivå:
+Invert colors|Färgnegativ
+Rotate image:|Rotera bilden:
+Reset|Nollställ
+Save|Spara
+Cancel|Avbryt
+OK|OK
+
+
+//
+// Create slide show script dialog
+//
+
+Create slideshow script|Skapa bildspelsfil
+File name:|Filnamn:
+Image progression|Bildväxling
+No delay between images|Ingen fördröjning mellan bilderna
+Wait for keypress or mouseclick|Vänta på tangent eller musklick
+Delay|Vänta
+seconds between images|sekunder mellan bilderna
+Sort files alphabetically|Sortera filerna i alfabetisk ordning
+Write full file paths|Spara filernas hela sökväg
+Loop slideshow continuously|Upprepa bildspelet kontinuerligt
+Edit in Notepad before executing|Editera i Notepad innan det körs igång
+Delete script file when finished|Radera bildspelsfilen när bildspelet avslutats
+Create!|Skapa!
+Cancel|Avbryt
+Note:   You can at any time press 'pause' to pause the slide show, or 'escape' to quit it.|Anm: Du kan när som helst trycka på 'pause' för att pausa bildspelet, ellet 'escape' för att avsluta det.
+
+
+//
+// File rename dialog
+//
+
+Rename image file|Döp om bildfil
+Old name:|Gamla namnet:
+New name:|Nytt namn:
+Rename!|Byt namn!
+
+
+//
+// Messages and misc stuff
+//
+
+Attention!|Obs!
+Do you really want to delete this?|Vill du verkligen radera detta?
+Couldn't create script file!|Kunde inte skapa bildspelsfil
+File operation failed!|Filkommandot misslyckades!
+
+// Install options
+Associate supported file types with Image Eye.|Associera bildfiltyper med Image Eye.
+Continue >|Fortsätt >

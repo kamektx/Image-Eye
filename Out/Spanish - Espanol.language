@@ -1,0 +1,271 @@
+//////////////////////////////////////////////////////////////////////////////
+// Spanish translation of Image Eye - by Francisco Javier Arrillaga         //
+//////////////////////////////////////////////////////////////////////////////
+
+
+//
+// Viewer context menu
+//
+
+File|Fichero
+View|Ver
+Slideshow|Diapositiva
+Index|Índice
+Options|Opciones
+Restore window|Restaurar ventana
+Close|Cerrar
+Help|Ayuda
+
+// View->
+Fullscreen mode|Modo pantalla completa
+Topmost window|Ventana superior
+Freeze window|Congelar ventana
+Size window to image|Ajustar ventana a imagen
+Size image to window|Ajustar imagen a ventana
+Trim image to window|Recortar imagen a ventana
+Restore original size|Restaurar tamaño original
+Adjust image...|Ajustar imagen...
+Rotate image -90°|Girar imagen -90°
+Rotate image +90°|Girar imagen +90°
+Rotate image 180°|Girar imagen 180°
+Mirror image vertically|Imagen espejo vertical
+Mirror image horizontally|Imagen espejo horizontal
+Zoom in|Zoom acercar
+Zoom out|Zoom alejar
+Zoom to factor|Zoom al factor
+Zoom to 10% size|Zoom al 10%
+Zoom to 25% size|Zoom al 25%
+Zoom to 50% size|Zoom al 50%
+Zoom to 75% size|Zoom al 75%
+Zoom to 100% size|Zoom al 100%
+Zoom to 150% size|Zoom al 150%
+Zoom to 200% size|Zoom al 200%
+Zoom to 300% size|Zoom al 300%
+Zoom to 400% size|Zoom al 400%
+Use as desktop wallpaper|Usar como fondo de escritorio
+Send window to back|Enviar imagen detrás
+
+// File->
+Load new...|Cargar nueva...
+Next image file|Imagen siguiente
+Previous image file|Imagen anterior
+First image file in directory|Primera imagen del directorio. 
+Last image file in directory|Última imagen del directorio.
+Close all image windows|Cerrar todas las imágenes
+Spawn new...|Generar nueva...
+Spawn next image|Genera imagen siguiente
+Spawn previous image|Genera imagen anterior"
+Image file information...|Información de fichero gráfico...
+Save as...|Guardar como...
+Reload from file|Recargar de fichero
+Copy file...|Copiar fichero...
+Move file...|Mover fichero...
+Rename file...|Renombrar fichero...
+Delete file...|Borrar fichero...
+Erase file...|Destruir fichero...
+Delete this & show next...|Borrar ésta y ver próxima...
+Erase this & show next...|Destruir ésta y ver próxima...
+Copy to clipboard|Copiar al portapapeles
+Paste from clipboard|Pegar de portapapeles
+Capture a screen shot|Capturar pantalla
+Capture a window shot|Capturar ventana
+
+// Slideshow->
+Create slideshow script|Crear diapositiva...
+Run in fullscreen mode|Abrir en pantalla completa
+
+
+//
+// Index context menu (only the items not also on the viewer context menu)
+//
+
+View image|Ver imagen
+View index|Ver índice
+View slideshow|Ver diapositiva
+Edit slideshow|Editar diapositiva
+Open|Abrir
+Recurse sub-directories|Subdirectorios recursivos
+Sort icons|Ordenar iconos
+Icon cache|Caché de iconos
+
+// File->
+Save index as bitmap...|Guardar índice como archivo gráfico...
+
+// View->
+Directories|Directorios
+Non-image files|Ficheros no gráficos
+Names (1 line)|Nombres (1 línea)
+Names (2 lines)|Nombres (2 líneas)
+Names (3 lines)|Nombres (3 líneas)
+Names (4 lines)|Nombres (4 líneas)
+Resolutions|Resoluciones
+File extensions|Extensiones de ficheros
+File dates|Fechas de ficheros
+File sizes|Tamaño de ficheros
+
+// Sort->
+By name|Por nombre
+By full path|Por ruta y nombre
+By image size|Por tamaño de imagen
+By file size|Por tamaño de fichero
+By file date|Por fecha
+
+// Cache->
+Recreate|Recrear
+Save cache|Salvar caché
+Update cache|Actualizar caché
+Remove cache|Borrar caché
+
+
+//
+// Extensions to the standard File open dialog
+//
+
+Recent:|Recientes:
+All files|Todos los ficheros
+View|Ver
+Open image file|Abrir fichero gráfico
+Save image as|Guardar imagen como
+Select destination folder...|Elija carpeta destino...
+Supported file types|Tipos de fichero soportados
+
+
+//
+// Options dialog
+//
+
+Viewer|Visor
+Viewer behavior|Comportamiento Visor
+Show title bar only when mouse hovers over image|Mostrar título sólo cuando el ratón pasa por la imagen
+Open in full screen mode|Abrir en pantalla completa
+Hide the progress display|Ocultar avance de visualización
+Auto-size image to window|Ajustar imagen a la ventana
+Only shrink|Sólo encoger
+Auto-shrink when too large in full screen mode|Auto-encoger si demasiado grande en pantalla completa
+Title bar text|Texto de barra de título
+Image resolution|Resolución
+Full file path|Ruta completa
+Image overlay text|Texto de imagen
+off|off
+top|arriba
+bottom|abajo
+left|izquierda
+center|centro
+right|derecha
+
+Thumbnail icons|Iconos miniatura
+Maximum icon size:|Tamaño máximo de icono:
+Icon spacing:|Espaciado:
+Automatically create cache|Crear caché automáticamente
+Compress cache files|Comprimir caché
+Icon size stored in cache overrides selected icon size|Tamaño de icono almacenado en caché reemplaza el tamaño seleccionado
+Close index window when opening an image|Cerrar ventana del índice al abrir una imagen
+Translucent background|Fondo translúcido
+Auto-background color|Color de fondo automáticamente
+Window background color|Color de fondo
+Title bar text|Texto de barra de título
+Show full directory path|Mostrar ruta completa
+Show number of images|Mostrar número de imágenes
+
+Misc|General
+Interface language:|Idioma de interfaz:
+Recent directories and last file memory|Recordar últimos directorios y último fichero
+Clear on program exit|Limpiar al salir
+Clear now|Limpiar ahora
+File type associations:|Asociaciones de tipos de fichero:
+Edit associations...|Editar asociaciones...
+
+Image|Imagen
+Image file information|Información de fichero gráfico
+File name|Nombre de archivo
+File path|Ruta de archivo
+Dimensions|Dimensiones
+Color format|Formato de color
+Compression|Compresión
+File format|Formato de fichero
+File time|Hora de fichero
+File size|Tamaño
+Name/title|Nombre/título
+Comment|Comentario
+Author|Autor
+Copyright|Copyright
+Date created|Fecha de creación
+Page|Página
+Source/device|Origen/dispositivo
+Pixel density|Densidad de pixel
+Orientation|Orientación
+GPS geotag|GPS geotag
+Keyword|Palabra clave
+
+About|Acerca de...
+Author:|Autor:
+Visit our WWW site for updates and more great apps!|Visite nuestra página para actualizaciones y otras aplicaciones!
+Please make a donation if you enjoy using this program!|Por favor, haga una donación si le gusta este programa!
+
+
+//
+// Image adjustment dialog
+//
+
+Image adjustment|Ajustar imagen
+Contrast:|Contraste:
+Brightness:|Brillo:
+Sharpness:|Nitidez:
+Hue:|Tono:
+Saturation:|Saturación:
+Gamma:|Gamma:
+Luminance:|Luminosidad:
+Red-bias:|Rojo:
+Green-bias:|Verde:
+Blue-bias:|Azul:
+Invert colors|Invertir colores
+Rotate image:|Girar imagen:
+Reset|Restaurar
+Save|Salvar
+Cancel|Cancelar
+OK|OK
+
+
+//
+// Create slide show script dialog
+//
+
+Create slideshow script|Crear proyección de diapositivas
+File name:|Nombre de fichero:
+Image progression|Progresión de imágenes
+No delay between images|Sin pausa entre imágenes
+Wait for keypress or mouseclick|Pausa hasta pulsar tecla o botón de ratón
+Delay|Pausa
+seconds between images|segundos entre imágenes
+Sort files alphabetically|Ordenar archivos alfabéticamente
+Write full file paths|Escribir ruta completa
+Loop slideshow continuously|Bucle continuo de imágenes
+Edit in Notepad before executing|Editar en Notepad antes de ejecutar
+Delete script file when finished|Borrar guión de proyección al acabar
+Create!|Crear!
+Cancel|Cancelar
+Note:   You can at any time press 'pause' to pause the slide show, or 'escape' to quit it.| Nota:  Puede pulsar 'pausa' en cualquier momento para detener la presentación de diapositivas, o 'escape' para cancelarla.
+
+
+//
+// File rename dialog
+//
+
+Rename image file|Renombrar
+Old name:|Nombre antiguo:
+New name:|Nombre nuevo:
+Rename!|Renombrar!
+
+
+//
+// Messages and misc stuff
+//
+
+Attention!|Atención!
+Do you really want to delete this?|¿Seguro que desea borrar el fichero?
+Couldn't create script file!|¡No puedo crear fichero de proyección!
+File operation failed!|Acción fallida sobre el fichero!
+
+// Install options
+Associate supported file types with Image Eye.|Asociar con Image Eye los tipos de ficheros soportados.
+Continue >|Continuar >

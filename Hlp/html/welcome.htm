@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Welcome</TITLE>
+<style>@import url(../style.css);</style>
+</HEAD>
+
+<BODY>
+
+<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="welcome">
+	<PARAM NAME="Keyword" VALUE="about image eye">
+	<PARAM NAME="Keyword" VALUE="what can it do?">
+	<PARAM NAME="Keyword" VALUE="introduction">
+	<PARAM NAME="Keyword" VALUE="features">
+</OBJECT>
+
+<CENTER>
+<P>
+<FONT color=#808080>Image Eye, Copyright 1993, 2015, <I>FMJ</I>-Software, All rights reserved</FONT><BR>
+</P>
+</CENTER>
+
+<P><CENTER><IMG SRC="../img/bird.gif"></CENTER></P>
+
+<P><H2>Welcome to Image Eye!</H2></P>
+
+<UL>
+<I>Go to <A HREF="#quick">Quick Start...</A></I><BR><BR>
+</UL>
+
+<P>Feature high-lights:<BR>
+<UL>
+	<LI>The only image viewer you need for viewing &amp; browsing images.<BR></LI>
+	<LI>Clean with <I>no</I> unnecessary menus and toolbars wasting desktop space.<BR></LI>
+	<LI>Uncompromising image quality.<BR></LI>
+	<LI>Small and very fast, highly tuned code.<BR></LI>
+	<LI>Reads all common image file formats.<BR></LI>
+	<LI>Image index feature with very fast thumbnail-icon creation.<BR></LI>
+	<LI>Rotate, mirror, zoom, pan, adjust contrast, brightness, sharpness, hue, saturation, gamma, ...<BR></LI>
+	<LI>Adjustments can be saved non-destructively (and reapplied next time you open it).<BR></LI>
+	<LI>There's an image index feature with very fast thumbnail-icon creation.<BR></LI>
+	<LI>It does <I>not</I> attempt to be a half-baked editor, format converter, or media player.<BR></LI>
+	<LI>It does include a simple slide show scripting language.<BR></LI>
+	<LI>Translated to several languages.<BR></LI>
+	<LI>Open Source.<BR></LI>
+</UL>
+</P>
+
+<P>Features for the tech-nerds:<BR>
+<UL>
+	<LI><I>Deep color &amp; HDR support:</I> Specialized code paths for grayscale and color data, with 8- or 16-bit integer, or 32-bit floating point / color component - maintaining full precision for all image processing operations.<BR></LI>
+	<LI><I>High quality dithering:</I> Floyd-Steinberg dithering is used for superior perceived image quality when displaying high bit-depth images.<BR></LI>
+	<LI><I>Asynchronous file I/O:</I> Images are decompressed at the same time as data is being read - i.e. it doesn't wait for file reads to finish before starting to decode.<BR></LI>
+	<LI><I>Speculative decoding &amp; caching of images:</I> While you view a file, the next file in the folder is invisibly being decoded, so that it can be brought up very quickly. And when you move to a new image, the old one is remembered (if memory allows), so that there's little delay if you toggle back and forth between images.<BR></LI>
+	<LI><I>Data parallelism exploitation:</I> Many heavy computational tasks are considerably sped up by using SEE, SSE2, SSE3 and SSE4 instructions. These "SIMD instructions" work on 4, 8 or even 16 numbers in parallel.<BR></LI>
+	<LI><I>Task parallelism exploitation:</I> Heavy computational work is considerably sped up by dividing big jobs into smaller tasks that are distributed on multiple CPU cores (if available). Work stealing and dynamic load balancing techniques ensure that all cores are busy.<BR></LI>
+	<LI><I>Hand tuned code optimizations:</I> Critical sections are optimized by hand.<BR></LI>
+	<LI><I>Code branching:</I> Common cases are handled using specialized code that is faster than the generic routines.<BR></LI>
+	<LI><I>High quality resampling:</I> All resampling (image resizing) is done using Catmull-Rom interpolation.<BR></LI>
+	<LI><I>Text meta data handling:</I> Text info tags can be read from several formats - Adobe XMP, IPTC IMM, EXIF, PNG, TIFF tags, PSD, GIF and JPEG comments.<BR></LI>
+    <LI><I>Native code:</I> x64 (64-bit) and x86 (32-bit) versions are available.<BR></LI>
+</UL>
+</P>
+
+<P>
+In the following section you will be given basic instructions on how to use the rather minimalistic user interface.<BR> 
+</P>
+
+<P><CENTER><IMG SRC="../img/bird.gif"></CENTER></P>
+
+<P><H2><A NAME="quick">Quick Start</A></H2></P>
+
+<P>
+<EM>W</EM>hen you start the program (e.g. by using <CODE>Start</CODE> &rarr; <CODE>All Programs</CODE> &rarr; <CODE>Image Eye</CODE>), the first thing you see is an <CODE>Open image file</CODE> dialog.
+Here you browse for the image file that you want to view.
+When a file is selected, you'll see both a small preview of it and a bit of file information.
+A lot of different <A HREF="fileformats.htm">File formats</A> are supported.
+The <CODE>Index</CODE> button brings up a special window that shows small thumbnail icons of all the images in the current folder.
+To see the image in full size, click <CODE>View</CODE>.<BR>
+</P>
+
+<P>
+A special feature of <I>Image Eye</I> is the image window is free from scroll bars, tool bars, and menus, which otherwise would occupy precious space and distract from the image.
+Even the window title bar and the borders are hidden if you move the mouse cursor outside of the image (NB; this feature can be disabled if you don't like it).<BR>
+<BR>
+If the image is larger than the window, the mouse cursor will change shape when it's on top of the window, indicating in which directions it can be scrolled.
+To scroll it, you press down the left mouse button and drag the image (as an alternative you can scroll with the number-keys on the numeric keyboard).
+If you have a mouse with a mouse wheel, you can use it too to scroll vertically.<BR>
+<BR>
+When the cursor is a normal pointer you can move the whole window easily by dragging it with the left mouse button. If it is showing a scroll-cursor, hold down the Alt-key to get the pointer instead.<BR>
+<BR>
+If you double-click with the left button on the image (or alternatively hit Alt-Enter on the keyboard), the window is maximized to full-screen mode (or restored to a window if it already was maximized).<BR>
+</P>
+
+<P>
+<I>Now you may ask:</I> Where's the program menu? Click with the right mouse button anywhere in the window and it will pop-up! The complete set of menu commands are described in the <A HREF="viewer.htm">Viewer commands</A> and <A HREF="index.htm">Index commands</A> sections. There you can also learn about keyboard short-cuts.<BR>
+<BR>
+E.g. try right click &rarr; <CODE>View</CODE> &rarr; <CODE>Adjust image...</CODE> where you can change such things as contrast, sharpness, color saturation, or do gamma correction. 
+Note that you can also save these adjustments so that they will be remembered and automatically re-applied the next time that you open the image file (this does <I>not</I> modify the original image file in any way whatsoever - the adjustments are stored in a separate hidden '.iea' file).<BR>
+</P>
+
+<P>
+There are many ways that you can open an image file:<BR>
+<OL>
+	<LI>Run <I>Image Eye.exe</I>, select one ore more files in the dialog box that pops up and click <CODE>View</CODE>.<BR><BR></LI>
+	<LI>Open an index window, then click on one of the thumb-nail icons. You can bring up an index window by either clicking the <CODE>Index</CODE> button in the <CODE>Open image file</CODE> dialog, or by right clicking on a folder in any part of the Windows shell (e.g. the Windows Explorer) and selecting <CODE>View as Image Eye index</CODE>.<BR><BR></LI>
+	<LI>If <I>Image Eye</I> has been associated with a file type; then just open the file from the Windows Explorer.<BR><BR></LI>
+	<LI>In a running Image Eye window, select <CODE>Spawn new</CODE> (new window) or <CODE>Load new</CODE> (replaces current) from the menu.<BR><BR></LI>
+	<LI>Drag an image file from the Windows Explorer to an already open <I>Image Eye</I> window.<BR><BR></LI>
+	<LI>In an open image window, press <CODE>PgDn</CODE> / <CODE>PgUp</CODE> (or <CODE>Space</CODE> / <CODE>Back-Space</CODE>, or mouse browse buttons), to display the Next / Previous image.<BR><BR></LI>
+	<LI>Hold down the left mouse button and scroll with the mouse wheel to browse among the images in the folder.<BR><BR></LI>
+</OL>
+</P>
+
+<P>
+A feature that deserves a special explanation is freeze mode. Using <CODE>View</CODE> &rarr; <CODE>Freeze window</CODE>, you can lock the image window into its current position on the desktop (with no menu bars or anything) and the only thing you can do with it then is right click on it to bring up a menu with a few select commands (e.g. select <CODE>Freeze window</CODE> again to unfreeze it).
+If you shut down Windows without manually closing a frozen window, it will automatically load and show in same position the next time you boot up.
+This can be useful for e.g. sticking photographs of near and dear ones onto your desktop.<BR>
+</P>
+<BR>
+
+<P><H2>Portable version</H2></P>
+
+<P>
+<EM>I</EM>f you run <I>Image Eye.exe</I> on a computer where it has not been installed through its <I>Setup.exe</I>, then settings are not remembered - and nothing will be stored in the registry et c, thus leaving an entirely 'untouched' system. This is useful e.g. if you want to run it from a USB-key on a borrowed computer.
+</P>
+
+
+<P><CENTER><IMG SRC="../img/bird.gif"></CENTER></P>
+
+<I>Enjoy using Image Eye!</I>
+
+
+<CENTER>
+<IMG SRC="../img/iecpp.gif" ALT="" BORDER=1 style="border-style:solid;border-color:000000">
+</CENTER>
+
+</BODY>
+</HTML>
