@@ -450,12 +450,23 @@ static INT_PTR CALLBACK ImageInfoOptionsPage(HWND hwnd, UINT message, WPARAM wPa
 		i = 64;
 		CtlList::SetTabStops(hwnd, PAP_INFO, 1, &i);
 
-		iePImageDisplay pimd = (iePImageDisplay)lp;
-		if (pimd) for (DWORD dw = 0; dw < DWORD(ieTextInfoType::Count); dw++) {
-			
-			if (!pimd->Text()->Have(ieTextInfoType(dw))) continue;
+		iePCTextInfo pInfo = nullptr;
+		iePImage pimInfo = nullptr;
+		if (lp) {
+			iePImageDisplay pimd = (iePImageDisplay)lp;
+			pimInfo = pimd->OrigImage();
+			if (pimInfo) {
+				while (pimInfo->FrameParams().pimPrev)		// Get first info from frame if multi-frame image
+					pimInfo = pimInfo->FrameParams().pimPrev;
+				pInfo = pimInfo->Text();
+			}
+		}
 
-			pszInfo = pimd->Text()->Get(ieTextInfoType(dw));
+		if (pInfo) for (DWORD dw = 0; dw < DWORD(ieTextInfoType::Count); dw++) {
+			
+			if (!pInfo->Have(ieTextInfoType(dw))) continue;
+
+			pszInfo = pInfo->Get(ieTextInfoType(dw));
 		
 			PCTCHAR pcszType = ieTranslate(ie_DescribeTextInfoType(ieTextInfoType(dw)));
 
@@ -487,14 +498,14 @@ static INT_PTR CALLBACK ImageInfoOptionsPage(HWND hwnd, UINT message, WPARAM wPa
 			}
 			else if (ieTextInfoType(dw) == ieTextInfoType::SourceBitsPerPixel) {
 
-				_stprintf(psz, _T("%s:\t%dx%dx%s"), pcszType, pimd->X(), pimd->Y(), pszInfo);
+				_stprintf(psz, _T("%s:\t%dx%dx%s"), pcszType, pimInfo->X(), pimInfo->Y(), pszInfo);
 
 			}
 			else if (ieTextInfoType(dw) == ieTextInfoType::PixelDensity) {
 
 				iePixelDensity pd;
-				ie_ParsePixelDensityInfoStr(pd, pszInfo, ieDotsPerInch);
-				_stprintf(psz, _T("%s:\t%dx%d dpi"), pcszType, pd.dwXpU, pd.dwYpU);
+				ie_ParsePixelDensityInfoStr(pd, pszInfo, iePixelsPerInch);
+				_stprintf(psz, _T("%s:\t%dx%d ppi"), pcszType, pd.dwXpU, pd.dwYpU);
 
 			} else {
 

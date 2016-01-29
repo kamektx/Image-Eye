@@ -646,7 +646,7 @@ bool SaveImage(HWND hwnd, iePImageDisplay pimd, PCTCHAR pcszFile, bool bSaveOrig
 	bmih.biCompression = BI_RGB;
 	bmih.biSizeImage = 0;
 	iePixelDensity pd = { 0, 0 };
-	ie_ParsePixelDensityInfoStr(pd, pim->Text()->Get(ieTextInfoType::PixelDensity), ieDotsPerMeter);
+	ie_ParsePixelDensityInfoStr(pd, pim->Text()->Get(ieTextInfoType::PixelDensity), iePixelsPerMeter);
 	bmih.biXPelsPerMeter = pd.dwXpU;
 	bmih.biYPelsPerMeter = pd.dwYpU;
 	bmih.biClrUsed = bmih.biClrImportant = 0;

@@ -61,6 +61,7 @@ Root: HKLM; Subkey: "SOFTWARE\Classes\ImageEye\shell\open\command"; ValueType: e
 Root: HKLM; Subkey: "SOFTWARE\RegisteredApplications"; ValueType: string; ValueName: "Image Eye"; ValueData: "SOFTWARE\FMJ-Software\Image Eye\Capabilities"; Flags: uninsdeletevalue
 Root: HKLM; Subkey: "SOFTWARE\FMJ-Software\Image Eye\Capabilities"; ValueType: string; ValueName: "ApplicationDescription"; ValueData: "The fast, free, no-nonsense image viewer"
 Root: HKLM; Subkey: "SOFTWARE\FMJ-Software\Image Eye\Capabilities"; ValueType: string; ValueName: "ApplicationName"; ValueData: "Image Eye"
+Root: HKLM; Subkey: "SOFTWARE\FMJ-Software\Image Eye\Capabilities\FileAssociations"; ValueType: string; ValueName: ".apng"; ValueData: "ImageEye"
 Root: HKLM; Subkey: "SOFTWARE\FMJ-Software\Image Eye\Capabilities\FileAssociations"; ValueType: string; ValueName: ".bmp"; ValueData: "ImageEye"
 ;Root: HKLM; Subkey: "SOFTWARE\FMJ-Software\Image Eye\Capabilities\FileAssociations"; ValueType: string; ValueName: ".cur"; ValueData: "ImageEye"
 Root: HKLM; Subkey: "SOFTWARE\FMJ-Software\Image Eye\Capabilities\FileAssociations"; ValueType: string; ValueName: ".dds"; ValueData: "ImageEye"
