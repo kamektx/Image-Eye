@@ -391,6 +391,7 @@ BEGIN
     "X",            CMD_EXIT,               VIRTKEY, ALT, NOINVERT
     189,            CMD_ZOOM25,             ASCII,  NOINVERT
     167,            CMD_ZOOM50,             ASCII,  NOINVERT
+	"0",			CMD_ZOOM_PRINTPREVIEW,	ASCII,  NOINVERT
     "1",            CMD_ZOOM100,            VIRTKEY, NOINVERT
     "2",            CMD_ZOOM200,            VIRTKEY, NOINVERT
     "3",            CMD_ZOOM300,            VIRTKEY, NOINVERT

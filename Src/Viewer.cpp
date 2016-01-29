@@ -761,7 +761,9 @@ void ViewerWnd::OnCommand(WORD wId, WORD wCode, HWND hwndFrom)
 	case CMD_ZOOM150:
 	case CMD_ZOOM200:
 	case CMD_ZOOM300:
-	case CMD_ZOOM400: {
+	case CMD_ZOOM400: 
+	case CMD_ZOOM_PRINTPREVIEW:
+	{
 		iInhibitCaptionChange++;
 		
 		double dZoomFactor = pimd->Adjustments()->GetZoom();
@@ -778,6 +780,15 @@ void ViewerWnd::OnCommand(WORD wId, WORD wCode, HWND hwndFrom)
 		case CMD_ZOOM200:	dZoomFactor = 2.00;			break;
 		case CMD_ZOOM300:	dZoomFactor = 3.00;			break;
 		case CMD_ZOOM400:	dZoomFactor = 4.00;			break;
+		case CMD_ZOOM_PRINTPREVIEW:
+			if (pimd->Text()) {
+				iePixelDensity pd = { 0, 0 };
+				ie_ParsePixelDensityInfoStr(pd, pimd->Text()->Get(ieTextInfoType::PixelDensity), iePixelsPerInch);
+				if (pd.dwXpU) {
+					dZoomFactor = double(muiGetMonitorDpi(hwnd)) / double(pd.dwXpU);
+				}
+			}	
+			break;
 		}
 
 		ZoomImage(dZoomFactor);

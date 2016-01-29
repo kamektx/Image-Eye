@@ -78,6 +78,7 @@
 #define CMD_ZOOM_IN                     149
 #define CMD_ZOOM_OUT                    150
 #define CMD_ADJUSTIMAGE                 151
+#define CMD_ZOOM_PRINTPREVIEW           152
 #define CMD_CAPTURESCREEN               153
 #define CMD_CAPTUREWINDOW               154
 #define CMD_NEGATIVE                    155

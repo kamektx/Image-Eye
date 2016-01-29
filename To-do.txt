@@ -1,10 +1,17 @@
+Added "0" as a keyboard shortcut to set zoom to "print preview", i.e. image meta-data PPI / screen PPI.
+
 
 IDEAS FOR FUTURE VERSIONS:
 
+Bug: Deleting a file from Explorer leaves last index icon hanging.
+Bug: Opening a 2nd index for the same folder hangs (only if still parsing the 1st?)
+
 Interface:
+- Configurable key and mouse button commands.
+
+- Sort files like Windows (1,2,11, not 1, 11, 2)
 - Touch Input support (gestures for next/prev, zoom, rotate, close, open index?)
 - More modern look for the tabbed Options dialog.
-- Configurable key and mouse button commands.
 - Editing support for image meta data.
 - "Open with" command list (to open in e.g. external editors).
 - Option for a "flow arrangement" of index icons instead of the current "grid arrangement" (in order to fit as much as possible into the available space).
