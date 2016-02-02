@@ -562,10 +562,8 @@ void IndexWnd::ReadIcons(bool bRecurseSubDirs)
 	}
 
 	// Shrink and paint window
-	if (!bFreezedWindow) {
-		Size2Icons();
-		UpdateWindow();
-	}
+	if (!bFreezedWindow) Size2Icons();
+	UpdateWindow();
 
 #ifdef __TIMEIT
 	t.Reset();

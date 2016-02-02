@@ -68,7 +68,7 @@ int FileIconCollection::ReadDirectory(ieIDirectoryEnumerator *&pEnum, PCTCHAR pc
 	
 	FileIcon *pOldIcons = nullptr;
 	if (pFirstIcon && bSamePath) {
-		// Same path -> Save a copy previous icons that we can retrieve the new icons from for all files that hasn't changed
+		// Same path -> Save a copy of previous icons that we can retrieve the new icons from for all files that hasn't changed
 		pOldIcons = pFirstIcon;
 		pFirstIcon = pLastIcon = nullptr;
 	} else {
